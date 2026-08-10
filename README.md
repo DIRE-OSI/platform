@@ -5,7 +5,7 @@
 **1-, 2-, and 3-month-ahead disease-incidence risk forecasting at sub-national scale**
 *Initial coverage: dengue & malaria in Peru and Brazil — additional countries and diseases are being onboarded.*
 
-[🌐 Live Dashboard](https://dire.impact.nltglobal.com) · [ℹ️ About](docs/ABOUT.md) · [👥 Team](docs/TEAM.md) · [📜 Roadmap](docs/ROADMAP.md) · [🤝 Get Involved](#-get-involved)
+[🌐 Live Dashboard](https://dire.impact.nltglobal.com) · [🗺️ Using the Dashboard](docs/USING_THE_DASHBOARD.md) · [ℹ️ About](docs/ABOUT.md) · [🔬 Research Basis](docs/RESEARCH_BASIS.md) · [👥 Team](docs/TEAM.md) · [📜 Roadmap](docs/ROADMAP.md) · [🤝 Get Involved](#-get-involved) · [🆘 Support](SUPPORT.md)
 
 > 🚧 **Status: Under active development.** This repository is an early, evolving release published **in coordination with the DIRE project team at UC San Diego (UCSD) and New Light Technologies (NLT)**. Its structure, documentation, and included code are being staged and reviewed phase by phase; content may change. It is shared now to enable open review and collaboration — please treat it as work in progress and coordinate with the project team before relying on it.
 
@@ -59,6 +59,19 @@ DIRE is an **open science** project. We built this repository so that researcher
 - We work with surveillance data from national health authorities under appropriate agreements. If your institution wants to collaborate on data, validation, or a country expansion, reach out through the channels in [docs/TEAM.md](docs/TEAM.md).
 
 **Community standards.** Participation in this project is governed by our [Code of Conduct](CODE_OF_CONDUCT.md). Please read it before engaging.
+
+---
+
+## 🆘 Support & contact
+
+Need help, found a bug, or have a question? See **[SUPPORT.md](SUPPORT.md)** for where each request should go. In short:
+
+- **Bugs, errors, reproducibility gaps** → open an [Issue](https://github.com/DIRE-OSI/platform/issues/new/choose).
+- **Questions, ideas, new covariates/diseases/countries** → start a [Discussion](https://github.com/DIRE-OSI/platform/discussions).
+- **Security vulnerabilities** → follow [SECURITY.md](SECURITY.md) (please don't open a public issue).
+- **Live dashboard feedback** → use the feedback form on [dire.impact.nltglobal.com](https://dire.impact.nltglobal.com).
+
+New issues are automatically acknowledged and routed to the maintainers.
 
 ---
 
