@@ -2,7 +2,8 @@
 
 ### Disease Incidence and Resource Estimator
 
-**1-, 2-, and 3-month-ahead dengue & malaria risk forecasting for Peru and Brazil**
+**1-, 2-, and 3-month-ahead disease-incidence risk forecasting at sub-national scale**
+*Initial coverage: dengue & malaria in Peru and Brazil — additional countries and diseases are being onboarded.*
 
 [🌐 Live Dashboard](https://dire.impact.nltglobal.com) · [ℹ️ About](docs/ABOUT.md) · [👥 Team](docs/TEAM.md) · [📜 Roadmap](docs/ROADMAP.md) · [🤝 Get Involved](#-get-involved)
 
@@ -18,7 +19,9 @@
 
 ## What is DIRE?
 
-DIRE (Dengue Integrated Risk Estimation) is a machine-learning forecasting platform that produces **1-, 2-, and 3-month-ahead dengue and malaria incidence estimates** (the current month plus the following two) at the sub-national administrative level for **Peru and Brazil**. It is designed to support public-health decision-makers, epidemiologists, and humanitarian responders in anticipating disease burden and allocating resources *before* outbreaks peak.
+DIRE (Dengue Integrated Risk Estimation) is a machine-learning forecasting platform that produces **1-, 2-, and 3-month-ahead disease-incidence estimates** (the current month plus the following two) at the sub-national administrative level. It is designed to support public-health decision-makers, epidemiologists, and humanitarian responders in anticipating disease burden and allocating resources *before* outbreaks peak.
+
+**Coverage is expanding.** Peru and Brazil — and the diseases dengue and malaria — are the **first countries and diseases** being trialed during the platform's development and operations-and-maintenance (O&M) phase. The methodology and pipelines are built to generalize, and **additional countries and diseases are being onboarded** over time. References to Peru, Brazil, dengue, and malaria throughout this repository describe the *current* rollout, not the platform's ultimate scope.
 
 The platform integrates:
 
