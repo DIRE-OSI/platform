@@ -5,6 +5,10 @@
 **1-, 2-, and 3-month-ahead disease-incidence risk forecasting at sub-national scale**
 *Initial coverage: dengue & malaria in Peru and Brazil — additional countries and diseases are being onboarded.*
 
+![License](https://img.shields.io/badge/license-Apache--2.0-blue)
+![Docs](https://img.shields.io/badge/docs-CC--BY--4.0-lightgrey)
+![Status](https://img.shields.io/badge/status-active%20development-orange)
+
 [🌐 Live Dashboard](https://dire.impact.nltglobal.com) · [🗺️ Using the Dashboard](docs/USING_THE_DASHBOARD.md) · [ℹ️ About](docs/ABOUT.md) · [🔬 Research Basis](docs/RESEARCH_BASIS.md) · [👥 Team](docs/TEAM.md) · [📜 Roadmap](docs/ROADMAP.md) · [🤝 Get Involved](#-get-involved) · [🆘 Support](SUPPORT.md)
 
 > 🚧 **Status: Under active development.** This repository is an early, evolving release published **in coordination with the DIRE project team at UC San Diego (UCSD) and New Light Technologies (NLT)**. Its structure, documentation, and included code are being staged and reviewed phase by phase; content may change. It is shared now to enable open review and collaboration — please treat it as work in progress and coordinate with the project team before relying on it.
