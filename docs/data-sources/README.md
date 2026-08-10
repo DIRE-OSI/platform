@@ -4,12 +4,10 @@ DIRE integrates open remote-sensing and climate data with national epidemiologic
 
 | Source | What it provides | Access | Guide |
 |---|---|---|---|
-| **NASA Earthdata** | MODIS land cover & vegetation indices; NASADEM elevation | Free account + token | `nasa-earthdata.md` |
-| **Copernicus CDS** | ERA5-Land temperature, precipitation, humidity | Free account + API key | `copernicus-cds.md` |
-| **Brazil DATASUS / SINAN** | Reported dengue/malaria case records (Brazil) | Public surveillance data | `datasus-sinan.md` |
-| **Peru MINSA** | Reported dengue case records (Peru) | Public surveillance data | `peru-minsa.md` |
-
-> Per-source guides (`nasa-earthdata.md`, `copernicus-cds.md`, `datasus-sinan.md`, `peru-minsa.md`) will be added here. Each will cover signup, credential setup, coverage, temporal resolution, and licensing.
+| **NASA Earthdata** | MODIS land cover & vegetation indices; NASADEM elevation | Free account + token | [nasa-earthdata.md](nasa-earthdata.md) |
+| **Copernicus CDS** | ERA5-Land temperature, precipitation, humidity | Free account + API key | [copernicus-cds.md](copernicus-cds.md) |
+| **Brazil DATASUS / SINAN** | Reported dengue/malaria case records (Brazil) | Public surveillance data | [datasus-sinan.md](datasus-sinan.md) |
+| **Peru MINSA / CDC Perú** | Reported dengue/malaria case records (Peru) | Public surveillance data | [peru-minsa.md](peru-minsa.md) |
 
 ## A note on data ethics
 
