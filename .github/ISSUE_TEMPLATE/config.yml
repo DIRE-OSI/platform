@@ -1,0 +1,11 @@
+blank_issues_enabled: false
+contact_links:
+  - name: 💬 Questions & ideas (Discussions)
+    url: https://github.com/DIRE-OSI/platform/discussions
+    about: Ask questions, propose covariates/diseases/countries, or discuss the research. Please use Discussions rather than Issues for open-ended topics.
+  - name: 🌐 Live dashboard feedback
+    url: https://dire.impact.nltglobal.com
+    about: To give feedback on the live DIRE dashboard, use the feedback form on the site.
+  - name: 🔒 Report a security vulnerability
+    url: https://github.com/DIRE-OSI/platform/security/policy
+    about: Please report security issues privately, not as a public issue.
