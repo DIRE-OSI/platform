@@ -1,0 +1,39 @@
+name: "💡 Feature / research idea"
+description: Propose a new covariate, model improvement, disease, country, or capability.
+title: "[Idea] "
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        For open-ended discussion, consider starting a [Discussion](https://github.com/DIRE-OSI/platform/discussions) instead. Use this form when you have a concrete proposal.
+  - type: textarea
+    id: proposal
+    attributes:
+      label: What are you proposing?
+      description: The covariate, method, disease, country, or capability.
+    validations:
+      required: true
+  - type: textarea
+    id: motivation
+    attributes:
+      label: Motivation
+      description: What problem does it solve? Who benefits (researchers, responders, agencies)?
+    validations:
+      required: true
+  - type: textarea
+    id: approach
+    attributes:
+      label: Possible approach
+      description: Optional — how you imagine it could work, references, prior art.
+    validations:
+      required: false
+  - type: dropdown
+    id: offer
+    attributes:
+      label: Are you offering to help build it?
+      options:
+        - "Yes, I'd like to work on this"
+        - "Suggesting it for the team/community to consider"
+    validations:
+      required: true

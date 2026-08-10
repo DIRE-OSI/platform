@@ -1,0 +1,51 @@
+name: "🐞 Bug / reproducibility report"
+description: Report a bug, an error, or a reproducibility gap in the pipelines or docs.
+title: "[Bug] "
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for helping improve DIRE. Please **do not include secrets, credentials, or personal/locational health data.** For security vulnerabilities, use the security policy instead.
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: What's the problem?
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      description: Commands, inputs, or data needed to reproduce.
+      placeholder: |
+        1. ...
+        2. ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected vs. actual behavior
+    validations:
+      required: true
+  - type: dropdown
+    id: area
+    attributes:
+      label: Area
+      options:
+        - Predictors pipeline
+        - Forecasting pipeline
+        - Documentation
+        - Data / test data
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python/R versions, component/commit.
+    validations:
+      required: false

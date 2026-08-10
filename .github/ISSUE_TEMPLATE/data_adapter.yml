@@ -1,0 +1,35 @@
+name: "🌎 New country / disease data adapter"
+description: Propose or contribute a surveillance/data adapter for a new country or disease.
+title: "[Adapter] "
+labels: ["adapter", "enhancement", "help wanted"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        DIRE's methodology generalizes across geographies and vector-borne diseases. This form is for proposing or contributing a data adapter (e.g., a new country's surveillance source or a new disease).
+  - type: input
+    id: geography
+    attributes:
+      label: Country / region
+    validations:
+      required: true
+  - type: input
+    id: disease
+    attributes:
+      label: Disease(s)
+    validations:
+      required: true
+  - type: textarea
+    id: source
+    attributes:
+      label: Data source
+      description: The surveillance/covariate source, access method, licence, and admin granularity.
+    validations:
+      required: true
+  - type: textarea
+    id: privacy
+    attributes:
+      label: Privacy note
+      description: Confirm the source can be used as aggregate, non-personal data.
+    validations:
+      required: true
