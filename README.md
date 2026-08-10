@@ -2,21 +2,23 @@
 
 ### Disease Incidence and Resource Estimator
 
-**One-month-ahead dengue & malaria risk forecasting for Peru and Brazil**
+**1-, 2-, and 3-month-ahead dengue & malaria risk forecasting for Peru and Brazil**
 
 [🌐 Live Dashboard](https://dire.impact.nltglobal.com) · [ℹ️ About](docs/ABOUT.md) · [👥 Team](docs/TEAM.md) · [📜 Roadmap](docs/ROADMAP.md) · [🤝 Get Involved](#-get-involved)
+
+> 🚧 **Status: Under active development.** This repository is an early, evolving release published **in coordination with the DIRE project team at UC San Diego (UCSD) and New Light Technologies (NLT)**. Its structure, documentation, and included code are being staged and reviewed phase by phase; content may change. It is shared now to enable open review and collaboration — please treat it as work in progress and coordinate with the project team before relying on it.
 
 > ⚠️ **Disclaimer:** All forecasts and analytical outputs are provided "as is" for decision-support purposes only. New Light Technologies, UC San Diego, and UNICEF expressly disclaim all liability for decisions made using these outputs. See [DISCLAIMER.md](DISCLAIMER.md) for full terms.
 
 ---
 
-**Phase 0 — public release.** This repository contains the data-source documentation and Python/R processing pipelines for the DIRE IMPACT Platform. It is the open, community-facing home of the project, released under the Wellcome Trust open-source grant conditions. The forecasting API and interactive dashboard are live at [dire.impact.nltglobal.com](https://dire.impact.nltglobal.com); their source code will follow in subsequent phases. See [docs/ROADMAP.md](docs/ROADMAP.md) for the full release plan.
+**Phase 0 — initial release (work in progress).** This repository is being populated, in coordination with the project team at **UCSD and NLT**, with the data-source documentation and Python/R processing pipelines for the DIRE IMPACT Platform. It is the open, community-facing home of the project, released under the Wellcome Trust open-source grant conditions. The forecasting API and interactive dashboard are live at [dire.impact.nltglobal.com](https://dire.impact.nltglobal.com); their source code will follow in subsequent phases. See [docs/ROADMAP.md](docs/ROADMAP.md) for the full release plan.
 
 ---
 
 ## What is DIRE?
 
-DIRE (Dengue Integrated Risk Estimation) is a machine-learning forecasting platform that produces **one-month-ahead dengue and malaria incidence estimates** at the sub-national administrative level for **Peru and Brazil**. It is designed to support public-health decision-makers, epidemiologists, and humanitarian responders in anticipating disease burden and allocating resources *before* outbreaks peak.
+DIRE (Dengue Integrated Risk Estimation) is a machine-learning forecasting platform that produces **1-, 2-, and 3-month-ahead dengue and malaria incidence estimates** (the current month plus the following two) at the sub-national administrative level for **Peru and Brazil**. It is designed to support public-health decision-makers, epidemiologists, and humanitarian responders in anticipating disease burden and allocating resources *before* outbreaks peak.
 
 The platform integrates:
 

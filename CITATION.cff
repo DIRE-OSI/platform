@@ -13,8 +13,8 @@ repository-code: "https://github.com/DIRE-OSI/platform"
 url: "https://dire.impact.nltglobal.com"
 abstract: >-
   DIRE (Dengue Integrated Risk Estimation) is an open-science machine-learning
-  platform producing one-month-ahead dengue and malaria incidence forecasts at
-  sub-national administrative granularity for Peru and Brazil. It integrates
+  platform producing 1-, 2-, and 3-month-ahead dengue and malaria incidence
+  forecasts at sub-national administrative granularity for Peru and Brazil. It integrates
   remote-sensing and climate covariates with epidemiological surveillance data
   in an ensemble model (CatBoost, SVM, LSTM synthesized with a Random Forest).
 keywords:

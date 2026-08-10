@@ -10,6 +10,6 @@ By accessing or using this repository or the DIRE platform, you acknowledge and 
 
 ## Model limitations
 
-- Forecasts are **one-month-ahead estimates** at GADM Level 3 administrative granularity and carry inherent uncertainty. Confidence indicators are provided where available and should be consulted alongside point estimates.
+- Forecasts are **1-, 2-, and 3-month-ahead estimates** (the current month plus the following two) at GADM Level 3 administrative granularity and carry inherent uncertainty that grows with the forecast horizon. Confidence indicators are provided where available and should be consulted alongside point estimates.
 - Reported surveillance data may lag by several weeks or months relative to the current month, depending on the source. Historical values are subject to revision.
 - The platform is in **soft launch**, with UX/UI and data-quality reviews ongoing. Known issues are being addressed; please report problems via the repository's issue tracker or the dashboard feedback form.
