@@ -1,0 +1,38 @@
+# Environment / credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.uv/
+.ipynb_checkpoints/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# Data & model artifacts (do not commit raw or large data)
+*.tif
+*.tiff
+*.nc
+*.grib
+*.parquet
+*.pkl
+*.joblib
+data/raw/
+data/interim/
+outputs/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

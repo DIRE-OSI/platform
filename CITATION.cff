@@ -1,0 +1,41 @@
+cff-version: 1.2.0
+title: DIRE IMPACT Platform
+message: >-
+  If you use this software or its data pipelines, please cite both
+  this software and the underlying methodology paper.
+type: software
+authors:
+  - name: New Light Technologies, Inc.
+    website: "https://newlighttechnologies.com"
+  - name: University of California, San Diego
+    website: "https://gps.ucsd.edu"
+repository-code: "https://github.com/DIRE-OSI/platform"
+url: "https://dire.impact.nltglobal.com"
+abstract: >-
+  DIRE (Dengue Integrated Risk Estimation) is an open-science machine-learning
+  platform producing one-month-ahead dengue and malaria incidence forecasts at
+  sub-national administrative granularity for Peru and Brazil. It integrates
+  remote-sensing and climate covariates with epidemiological surveillance data
+  in an ensemble model (CatBoost, SVM, LSTM synthesized with a Random Forest).
+keywords:
+  - dengue
+  - malaria
+  - epidemiology
+  - forecasting
+  - machine-learning
+  - remote-sensing
+  - public-health
+  - open-science
+  - Peru
+  - Brazil
+license: Apache-2.0
+references:
+  - type: article
+    title: >-
+      A machine learning approach to dengue and malaria incidence forecasting
+    authors:
+      - family-names: Sebastianelli
+        given-names: A.
+    year: 2024
+    journal: Scientific Reports
+    doi: 10.1038/s41598-024-52796-9

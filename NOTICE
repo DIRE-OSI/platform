@@ -1,0 +1,24 @@
+DIRE IMPACT Platform
+Copyright 2026 New Light Technologies, Inc. and The Regents of the University of California (UC San Diego)
+
+This product includes software developed by New Light Technologies, Inc.
+as part of the DIRE (Disease Incidence and Resource Estimator) project,
+funded by a Wellcome Trust grant to the University of California, San Diego.
+
+Scientific collaboration: Universidad Peruana Cayetano Heredia (UPCH).
+
+Source code in this repository is licensed under the Apache License, Version 2.0
+(see LICENSE). Documentation and other non-code content is licensed under the
+Creative Commons Attribution 4.0 International License (CC-BY-4.0).
+
+This software integrates and documents the use of third-party data sources,
+each governed by its own terms and licenses, including:
+  - NASA Earthdata (MODIS, NASADEM)
+  - Copernicus Climate Data Store (ERA5-Land)
+  - Brazil Ministry of Health — DATASUS / SINAN
+  - Peru Ministry of Health — MINSA
+
+The ensemble modelling methodology is based on:
+  Sebastianelli, A., et al. (2024). A machine learning approach to dengue and
+  malaria incidence forecasting. Scientific Reports.
+  DOI: 10.1038/s41598-024-52796-9
