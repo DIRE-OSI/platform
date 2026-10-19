@@ -16,6 +16,10 @@ DIRE's open pipelines are designed to be run and validated **without access to r
 | Synthetic covariate tables | Same units and months | Exercise the covariate join and feature steps | In preparation |
 | Example forecast output | 3-month horizon | Illustrate output format and risk tiers | In preparation |
 
+## Worked example
+
+A small synthetic example for two districts of Iquitos, Peru (dengue, monthly, 2015–2025) is available in [`examples/peru-iquitos-dengue`](https://github.com/DIRE-OSI/platform/tree/main/examples/peru-iquitos-dengue), with a generator, a schema check and a data card.
+
 ## Using it
 
 Once released, test data will live under `workflows/dengue_forecasting/data/synthetic/`, with a quick-start notebook under `notebooks/`. Installation steps are in [`INSTALL.md`](https://github.com/DIRE-OSI/platform/blob/main/INSTALL.md).
