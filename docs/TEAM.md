@@ -1,23 +1,25 @@
-# Team & Partners
+# Team & partners
 
-DIRE is a collaboration between technology, academic, and public-health institutions, funded through an open-science grant.
+DIRE is developed through a collaboration between academic, technical and public-health institutions. Roles described below are indicative and may evolve as the collaboration develops.
 
-## Partners
+## Collaborating institutions
 
-- **New Light Technologies (NLT), Inc.** — platform development, data engineering, ML modelling, and operation of the live dashboard.
-- **UC San Diego, School of Global Policy and Strategy** — grant recipient and academic lead.
-- **Universidad Peruana Cayetano Heredia (UPCH)** — scientific collaboration and regional public-health expertise.
+| Institution | Indicative role |
+|---|---|
+| **University of California San Diego**, School of Global Policy and Strategy | Academic leadership; grant recipient |
+| **New Light Technologies, Inc.** | Platform engineering, data science, data engineering and operation of the live dashboard |
+| **Universidad Peruana Cayetano Heredia** (UPCH), Peru | Scientific collaboration, surveillance-data expertise and regional public-health context |
+| **UNICEF** | Collaboration on public-health application and uptake |
+| **Wellcome** | Funding, under open-science grant conditions |
 
-## Funder
+## Open-science maintenance
 
-- **Wellcome Trust** — this work is released in fulfilment of Wellcome Trust open-science grant conditions.
+The open repository and documentation are maintained by the DIRE project team. Maintainer contacts will be listed as the project's public governance is finalised.
 
 ## Collaborating and getting in touch
 
-We welcome collaboration from researchers, public-health agencies, and data partners. The best first step depends on what you have in mind:
+Collaboration from researchers, public-health agencies and data partners is welcome.
 
 - **Technical questions, ideas, reproducibility** — open a [discussion](https://github.com/DIRE-OSI/platform/discussions) or an [issue](https://github.com/DIRE-OSI/platform/issues).
-- **Data partnership, validation studies, or country expansion** — these involve institutional agreements; open a discussion describing your organisation and goals, and a maintainer will route you to the right contact.
+- **Data partnerships, validation studies or extension to new settings** — these involve institutional agreements; please open a discussion describing your organisation and objectives, and a maintainer will follow up.
 - **Security concerns** — see [SECURITY.md](https://github.com/DIRE-OSI/platform/blob/main/SECURITY.md).
-
-*Named individual contacts and institutional email addresses will be added here as the project's public governance is finalized.*

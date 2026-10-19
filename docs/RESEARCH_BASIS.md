@@ -1,33 +1,35 @@
-# Research basis & references
+# Research basis
 
-DIRE builds on peer-reviewed work on machine-learning forecasting of mosquito-borne disease from environmental and socio-demographic data, adapted for operational, sub-national use in Peru and Brazil.
+DIRE builds on published work on machine-learning forecasting of mosquito-borne disease from environmental and socio-demographic data, and adapts it for operational, sub-national use.
 
-## Core methodology
+## Methodological foundation
 
-- **Sebastianelli, A., et al. (2024).** *A machine learning approach to dengue and malaria incidence forecasting.* *Scientific Reports.* DOI: [10.1038/s41598-024-52796-9](https://doi.org/10.1038/s41598-024-52796-9)
-
-  The study combines Earth-observation and climate covariates with surveillance data in an ensemble of complementary learners. DIRE adopts this ensemble approach as its starting point and extends it for monthly, multi-horizon, multi-level (administrative 1–3) operational forecasting. See [Methods & model card](METHODS.md) for how DIRE implements and evaluates the approach.
+DIRE adopts as its starting point the reproducible ensemble approach of Sebastianelli *et al.* (2024), which combines Earth-observation, climate and socio-demographic covariates with surveillance data in an ensemble of complementary learners. DIRE extends this approach to monthly estimation at several administrative levels and lead times, and to two diseases. See [Methods](METHODS.md).
 
 ## Scientific rationale
 
-- **Climate and environment shape transmission.** Temperature, rainfall, humidity, vegetation and land cover influence vector breeding, survival and viral replication, with lagged effects of several weeks to months. These relationships make short-horizon forecasting feasible.
-- **Recent incidence carries strong signal.** Case counts in recent months are among the most informative predictors; reporting delays therefore directly affect forecast quality (see [Methods & model card](METHODS.md#known-limitations)).
-- **Population structure matters.** Census-derived population, age structure, urbanisation and housing inform both incidence rates and the conversion of rates into expected cases and resource needs.
+- **Climate and environment influence transmission.** Temperature, rainfall, humidity, vegetation and land cover affect vector breeding, survival and viral replication, typically with lags of weeks to months.
+- **Recent incidence carries strong signal.** Recent case counts are among the most informative predictors; reporting delays therefore directly affect estimation quality.
+- **Population and living conditions matter.** Age structure, urbanisation, housing, water storage and sanitation shape exposure and inform the conversion of rates into expected cases and resource needs.
+- **Early warning supports cost-effective response.** Timely, spatially explicit estimates can support integrated vector management, clinical preparedness and the targeting of resources.
 
-## Data foundations
+## From estimates to resources
 
-| Domain | Source | Documentation |
-|---|---|---|
-| Climate reanalysis | Copernicus ERA5-Land | [Copernicus CDS](data-sources/copernicus-cds.md) |
-| Remote sensing & terrain | NASA MODIS, NASADEM | [NASA Earthdata](data-sources/nasa-earthdata.md) |
-| Surveillance (Brazil) | DATASUS / SINAN | [Brazil DATASUS / SINAN](data-sources/datasus-sinan.md) |
-| Surveillance (Peru) | MINSA / CDC Perú | [Peru MINSA](data-sources/peru-minsa.md) |
-| Population & housing | National censuses (Brazil 2010, 2022; Peru 2007, 2017) | [Data dictionary](DATA_DICTIONARY.md) |
+DIRE translates expected cases into indicative requirements across four areas: **prevention** (vector control, protective measures, community education and awareness), **diagnosis**, **treatment** (general and intensive care) and **programme operations** (personnel and management), with associated costs. Parameters are programme- and country-specific and will be documented as they are released. Resource estimates are planning aids, not prescriptions.
 
-## From forecasts to resources
+## Selected references
 
-DIRE translates predicted cases into indicative **resource needs**: prevention (vector control, community education, awareness), diagnosis, treatment (general and intensive care), and program operations, with associated costs. Parameters are program- and country-specific and are documented as they are released. Resource estimates are planning aids, not prescriptions.
+1. Sebastianelli, A., *et al.* (2024). A reproducible ensemble machine learning approach to forecast dengue outbreaks. *Scientific Reports*, 14, 3807. [doi:10.1038/s41598-024-52796-9](https://doi.org/10.1038/s41598-024-52796-9)
+2. Leung, X. Y., *et al.* (2023). A systematic review of dengue outbreak prediction models: current scenario and future directions. *PLOS Neglected Tropical Diseases*, 17(2), e0010631.
+3. Hussain-Alkhateeb, L., *et al.* (2021). Early warning systems (EWSs) for chikungunya, dengue, malaria, yellow fever, and Zika outbreaks: what is the evidence? A scoping review. *PLOS Neglected Tropical Diseases*, 15(9), e0009686.
+4. Buczak, A. L., *et al.* (2018). Ensemble method for dengue prediction. *PLOS ONE*, 13(1), e0189988.
+5. Benedum, C. M., *et al.* (2020). Weekly dengue forecasts in Iquitos, Peru; San Juan, Puerto Rico; and Singapore. *PLOS Neglected Tropical Diseases*, 14(10), e0008710.
+6. Paz-Bailey, G., *et al.* (2024). Dengue. *The Lancet*, 403.
+7. Prokhorenkova, L., *et al.* (2018). CatBoost: unbiased boosting with categorical features. *Advances in Neural Information Processing Systems*, 31.
+8. Hochreiter, S., & Schmidhuber, J. (1997). Long short-term memory. *Neural Computation*, 9(8), 1735–1780.
+9. Breiman, L. (2001). Random forests. *Machine Learning*, 45, 5–32.
+10. Muñoz-Sabater, J., *et al.* (2021). ERA5-Land: a state-of-the-art global reanalysis dataset for land applications. *Earth System Science Data*, 13, 4349–4383.
 
 ## How to cite DIRE
 
-Please cite both the software and the methodology paper. Citation metadata is maintained in [`CITATION.cff`](https://github.com/DIRE-OSI/platform/blob/main/CITATION.cff); GitHub's **"Cite this repository"** button generates APA and BibTeX. An archival DOI will be added with the first tagged release (see [Roadmap](ROADMAP.md)).
+Please cite both the software and the methodological reference above. Citation metadata is maintained in [`CITATION.cff`](https://github.com/DIRE-OSI/platform/blob/main/CITATION.cff); GitHub's **"Cite this repository"** function provides APA and BibTeX formats. A persistent identifier (DOI) is planned for tagged releases (see [Roadmap](ROADMAP.md)).
