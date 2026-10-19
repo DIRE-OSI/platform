@@ -1,4 +1,4 @@
-# DIRE IMPACT Platform — Documentation
+# DIRE — Disease Incidence and Resource Estimator
 
 Open documentation for the **Disease Incidence and Resource Estimator (DIRE)** — 1-, 2-, and 3-month-ahead infectious-disease risk forecasting and health-resource estimation. *In active development, in coordination with UC San Diego and New Light Technologies.*
 
