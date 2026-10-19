@@ -21,7 +21,7 @@ No credentials are required — DATASUS microdata are **public**.
 
 ## Privacy & aggregation
 
-DATASUS microdata are individual notification records. **DIRE uses only aggregate counts** (by administrative unit and month) and does **not** ingest or redistribute personal identifiers. Contributors must never commit raw record-level or personally identifiable data to this repository. See [`../../SECURITY.md`](../../SECURITY.md) and [`../../CONTRIBUTING.md`](../../CONTRIBUTING.md).
+DATASUS microdata are individual notification records. **DIRE uses only aggregate counts** (by administrative unit and month) and does **not** ingest or redistribute personal identifiers. Contributors must never commit raw record-level or personally identifiable data to this repository. See [`SECURITY.md`](https://github.com/DIRE-OSI/platform/blob/main/SECURITY.md) and [`CONTRIBUTING.md`](https://github.com/DIRE-OSI/platform/blob/main/CONTRIBUTING.md).
 
 ## Licensing & citation
 

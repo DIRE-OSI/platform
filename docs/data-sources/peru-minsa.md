@@ -20,7 +20,7 @@ DIRE uses Peru's national health-surveillance data (**MINSA** — Ministerio de 
 
 ## Privacy & aggregation
 
-DIRE uses only **aggregate** case counts by administrative unit and month; no personal or locational patient data are ingested or redistributed. See [`../../SECURITY.md`](../../SECURITY.md).
+DIRE uses only **aggregate** case counts by administrative unit and month; no personal or locational patient data are ingested or redistributed. See [`SECURITY.md`](https://github.com/DIRE-OSI/platform/blob/main/SECURITY.md).
 
 ## Licensing & citation
 

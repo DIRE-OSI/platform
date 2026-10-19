@@ -11,4 +11,4 @@ DIRE integrates open remote-sensing and climate data with national epidemiologic
 
 ## A note on data ethics
 
-DIRE uses only **aggregate** case counts at administrative-unit granularity. No individual patient records or locational personal data are included in this repository or its bundled test data. Contributors must never commit personally identifiable or locational health data — see [CONTRIBUTING.md](../../CONTRIBUTING.md) and [SECURITY.md](../../SECURITY.md).
+DIRE uses only **aggregate** case counts at administrative-unit granularity. No individual patient records or locational personal data are included in this repository or its bundled test data. Contributors must never commit personally identifiable or locational health data — see [CONTRIBUTING.md](https://github.com/DIRE-OSI/platform/blob/main/CONTRIBUTING.md) and [SECURITY.md](https://github.com/DIRE-OSI/platform/blob/main/SECURITY.md).

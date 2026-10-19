@@ -2,7 +2,7 @@
 
 This guide explains how to read and use the live DIRE dashboard at **<https://dire.impact.nltglobal.com>**. It doubles as a public FAQ for the platform. The dashboard is in **soft launch** — UX/UI and data-quality reviews are underway, and some known issues are being addressed.
 
-> On first visit you'll see a **Disclaimer** and a **Soft Launch** notice. Please read them; they explain that outputs are experimental, decision-support estimates provided "as is." See [DISCLAIMER.md](../DISCLAIMER.md).
+> On first visit you'll see a **Disclaimer** and a **Soft Launch** notice. Please read them; they explain that outputs are experimental, decision-support estimates provided "as is." See [DISCLAIMER.md](https://github.com/DIRE-OSI/platform/blob/main/DISCLAIMER.md).
 
 ## Layout at a glance
 
@@ -49,5 +49,5 @@ Use **Generate Report** in the top bar to export a customized risk report for a 
 ## Questions or problems?
 
 - **How the platform works, the science, the data:** see [ABOUT.md](ABOUT.md) and [RESEARCH_BASIS.md](RESEARCH_BASIS.md).
-- **Report a bug or ask a question:** see [SUPPORT.md](../SUPPORT.md).
+- **Report a bug or ask a question:** see [SUPPORT.md](https://github.com/DIRE-OSI/platform/blob/main/SUPPORT.md).
 - **Feedback on the live dashboard:** use the feedback form on the site.
