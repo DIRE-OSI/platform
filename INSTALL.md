@@ -53,7 +53,7 @@ See [`DEPENDENCIES.md`](DEPENDENCIES.md) for the full dependency list and pinned
 
 ## 5. Run against test data (no credentials)
 
-The forecasting pipeline can run end-to-end against the bundled/synthetic aggregate data. See [`docs/processing/`](docs/processing/) and [`docs/TEST_DATA.md`](docs/TEST_DATA.md) *(added with the test-data release)*.
+The forecasting pipeline can run end-to-end against the bundled/synthetic aggregate data. See [`docs/processing/`](docs/processing/) and [`docs/TEST_DATA.md`](docs/TEST_DATA.md).
 
 ## Troubleshooting
 

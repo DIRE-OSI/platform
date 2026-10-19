@@ -1,0 +1,8 @@
+# Pages that require a signed-in GitHub session (return 404 to anonymous checks)
+^https://github\.com/DIRE-OSI/platform/security/advisories/new
+^https://github\.com/DIRE-OSI/platform/issues/new
+# API endpoints (not browsable pages)
+^https://cds\.climate\.copernicus\.eu/api
+# Sites that block automated checkers but are valid for readers
+^https://doi\.org/
+^https://urs\.earthdata\.nasa\.gov/
