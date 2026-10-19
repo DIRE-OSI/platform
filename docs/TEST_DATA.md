@@ -12,9 +12,9 @@ DIRE's open pipelines are designed to be run and validated **without access to r
 
 | Dataset | Coverage | Purpose | Status |
 |---|---|---|---|
-| Synthetic case series | Peru & Brazil · dengue & malaria · monthly | Run the forecasting pipeline end to end | In review |
-| Synthetic covariate tables | Same units and months | Exercise the covariate join and feature steps | In review |
-| Example forecast output | 3-month horizon | Illustrate output format and risk tiers | In review |
+| Synthetic case series | Peru & Brazil · dengue & malaria · monthly | Run the forecasting pipeline end to end | In preparation |
+| Synthetic covariate tables | Same units and months | Exercise the covariate join and feature steps | In preparation |
+| Example forecast output | 3-month horizon | Illustrate output format and risk tiers | In preparation |
 
 ## Using it
 

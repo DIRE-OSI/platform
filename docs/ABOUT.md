@@ -27,6 +27,6 @@ DIRE is a **decision-support** tool. It is intended to complement — not replac
 
 ## References
 
-- Sebastianelli, A., et al. (2024). *A machine learning approach to dengue and malaria incidence forecasting.* Scientific Reports. DOI: [10.1038/s41598-024-52796-9](https://doi.org/10.1038/s41598-024-52796-9)
+- Sebastianelli, A., et al. (2024). *A reproducible ensemble machine learning approach to forecast dengue outbreaks.* Scientific Reports, 14, 3807. DOI: [10.1038/s41598-024-52796-9](https://doi.org/10.1038/s41598-024-52796-9)
 
-For how the models are built and evaluated, see [Methods & model card](METHODS.md). For data-source details and licenses, see [data-sources/](data-sources/). For pipeline run instructions, see [processing/](processing/).
+For how the models are built and evaluated, see [Methods](METHODS.md). For data-source details and licenses, see [data-sources/](data-sources/). For pipeline run instructions, see [processing/](processing/).

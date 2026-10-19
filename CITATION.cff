@@ -33,10 +33,12 @@ license: Apache-2.0
 references:
   - type: article
     title: >-
-      A machine learning approach to dengue and malaria incidence forecasting
+      A reproducible ensemble machine learning approach to forecast dengue outbreaks
     authors:
       - family-names: Sebastianelli
         given-names: A.
     year: 2024
     journal: Scientific Reports
+    volume: 14
+    start: 3807
     doi: 10.1038/s41598-024-52796-9
