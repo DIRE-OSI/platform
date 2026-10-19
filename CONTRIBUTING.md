@@ -1,4 +1,4 @@
-# Contributing to the DIRE IMPACT Platform
+# Contributing to DIRE
 
 Thank you for your interest in contributing. DIRE is an open-science project, and we welcome contributions from researchers, public-health practitioners, and developers alike. This document explains how to participate and what we expect from contributors.
 

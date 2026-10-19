@@ -1,6 +1,6 @@
 # Roadmap
 
-The DIRE IMPACT Platform is released in phases so that each public artifact is curated, reviewed, and safe to share. This document describes the planned sequence. Dates are indicative and may shift as the project and its community priorities evolve.
+DIRE is released in phases so that each public artifact is curated, reviewed, and safe to share. This document describes the planned sequence. Dates are indicative and may shift as the project and its community priorities evolve.
 
 ## Phase 0 — Open documentation & pipelines *(current)*
 
@@ -29,4 +29,4 @@ The DIRE IMPACT Platform is released in phases so that each public artifact is c
 
 ## How the community shapes the roadmap
 
-This roadmap is a starting point, not a fixed contract. We prioritize based on what researchers and public-health users tell us they need. Open a [discussion](https://github.com/DIRE-OSI/platform/discussions) to propose priorities, and see [Get Involved](../README.md#-get-involved) for how to participate.
+This roadmap is a starting point, not a fixed contract. We prioritize based on what researchers and public-health users tell us they need. Open a [discussion](https://github.com/DIRE-OSI/platform/discussions) to propose priorities, and see [Get Involved](https://github.com/DIRE-OSI/platform/blob/main/README.md#-get-involved) for how to participate.

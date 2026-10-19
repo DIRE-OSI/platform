@@ -1,4 +1,4 @@
-<!-- Thank you for contributing to the DIRE IMPACT Platform. -->
+<!-- Thank you for contributing to DIRE. -->
 
 ## Summary
 

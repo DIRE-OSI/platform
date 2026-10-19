@@ -1,6 +1,6 @@
-# About the DIRE IMPACT Platform
+# About DIRE
 
-DIRE (Dengue Integrated Risk Estimation) is a machine-learning forecasting platform that produces 1-, 2-, and 3-month-ahead dengue and malaria incidence estimates — the current month plus the following two — at the sub-national administrative level for Peru and Brazil. It is designed to help public-health decision-makers, epidemiologists, and humanitarian responders anticipate disease burden and allocate resources before outbreaks peak.
+DIRE (Disease Incidence and Resource Estimator) is a machine-learning forecasting platform that produces 1-, 2-, and 3-month-ahead dengue and malaria incidence estimates — the current month plus the following two — at the sub-national administrative level for Peru and Brazil. It is designed to help public-health decision-makers, epidemiologists, and humanitarian responders anticipate disease burden and allocate resources before outbreaks peak.
 
 ## The diseases
 
@@ -23,7 +23,7 @@ The dashboard surfaces three analytical views: **Cases** (predicted and historic
 
 ## Intended use
 
-DIRE is a **decision-support** tool. It is intended to complement — not replace — professional judgment, local knowledge, and official surveillance. Please read the [DISCLAIMER](../DISCLAIMER.md) for the full terms and model limitations.
+DIRE is a **decision-support** tool. It is intended to complement — not replace — professional judgment, local knowledge, and official surveillance. Please read the [DISCLAIMER](https://github.com/DIRE-OSI/platform/blob/main/DISCLAIMER.md) for the full terms and model limitations.
 
 ## References
 

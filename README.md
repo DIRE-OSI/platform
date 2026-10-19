@@ -1,4 +1,4 @@
-# 🦟 DIRE IMPACT Platform
+# 🦟 DIRE
 
 ### Disease Incidence and Resource Estimator
 
@@ -17,13 +17,13 @@
 
 ---
 
-**Phase 0 — initial release (work in progress).** This repository is being populated, in coordination with the project team at **UCSD and NLT**, with the data-source documentation and Python/R processing pipelines for the DIRE IMPACT Platform. It is the open, community-facing home of the project, released under the Wellcome Trust open-source grant conditions. The forecasting API and interactive dashboard are live at [dire.impact.nltglobal.com](https://dire.impact.nltglobal.com); their source code will follow in subsequent phases. See [docs/ROADMAP.md](docs/ROADMAP.md) for the full release plan.
+**Phase 0 — initial release (work in progress).** This repository is being populated, in coordination with the project team at **UCSD and NLT**, with the data-source documentation and Python/R processing pipelines for DIRE. It is the open, community-facing home of the project, released under the Wellcome Trust open-source grant conditions. The forecasting API and interactive dashboard are live at [dire.impact.nltglobal.com](https://dire.impact.nltglobal.com); their source code will follow in subsequent phases. See [docs/ROADMAP.md](docs/ROADMAP.md) for the full release plan.
 
 ---
 
 ## What is DIRE?
 
-DIRE (Dengue Integrated Risk Estimation) is a machine-learning forecasting platform that produces **1-, 2-, and 3-month-ahead disease-incidence estimates** (the current month plus the following two) at the sub-national administrative level. It is designed to support public-health decision-makers, epidemiologists, and humanitarian responders in anticipating disease burden and allocating resources *before* outbreaks peak.
+DIRE (Disease Incidence and Resource Estimator) is a machine-learning forecasting platform that produces **1-, 2-, and 3-month-ahead disease-incidence estimates** (the current month plus the following two) at the sub-national administrative level. It is designed to support public-health decision-makers, epidemiologists, and humanitarian responders in anticipating disease burden and allocating resources *before* outbreaks peak.
 
 **Coverage is expanding.** Peru and Brazil — and the diseases dengue and malaria — are the **first countries and diseases** being trialed during the platform's development and operations-and-maintenance (O&M) phase. The methodology and pipelines are built to generalize, and **additional countries and diseases are being onboarded** over time. References to Peru, Brazil, dengue, and malaria throughout this repository describe the *current* rollout, not the platform's ultimate scope.
 
@@ -191,11 +191,11 @@ Full instructions live in [docs/processing/](docs/processing/). The forecasting 
 
 If you use this software or the data pipelines, please cite both the software release and the underlying methodology paper.
 
-- **Software:** New Light Technologies, Inc. (2026). *DIRE IMPACT Platform.* GitHub. See [CITATION.cff](CITATION.cff).
+- **Software:** New Light Technologies, Inc. (2026). *DIRE: Disease Incidence and Resource Estimator.* GitHub. See [CITATION.cff](CITATION.cff).
 - **Methodology:** Sebastianelli, A., et al. (2024). *A machine learning approach to dengue and malaria incidence forecasting.* Scientific Reports. DOI: [10.1038/s41598-024-52796-9](https://doi.org/10.1038/s41598-024-52796-9)
 
 ---
 
 ## Funding and acknowledgements
 
-This work was funded by a **Wellcome Trust** grant to the **University of California, San Diego (UCSD)**. The software was developed by **New Light Technologies (NLT), Inc.** Scientific collaborators include **Universidad Peruana Cayetano Heredia (UPCH)**. The live DIRE dashboard is operated by NLT, Inc. and is currently in soft-launch with UX/UI and data-quality reviews underway.
+This work was funded by a **Wellcome Trust** grant to the **University of California, San Diego (UCSD)**. The software was developed by **New Light Technologies (NLT), Inc.** Scientific collaborators include **Universidad Peruana Cayetano Heredia (UPCH)**. The live DIRE dashboard is operated by NLT, Inc. and is currently in beta, with user-experience and data-quality reviews ongoing.

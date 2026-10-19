@@ -2,7 +2,7 @@
 
 ## Reporting a vulnerability
 
-We take the security of the DIRE IMPACT Platform seriously. If you discover a security vulnerability, please report it responsibly.
+We take the security of DIRE seriously. If you discover a security vulnerability, please report it responsibly.
 
 **Please do not open a public issue for security vulnerabilities.**
 

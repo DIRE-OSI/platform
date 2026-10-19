@@ -1,6 +1,6 @@
 # Support & Contact
 
-Thanks for your interest in the DIRE IMPACT Platform. Here's how to get help, ask questions, or report a problem — and where each kind of request should go.
+Thanks for your interest in DIRE. Here's how to get help, ask questions, or report a problem — and where each kind of request should go.
 
 ## Where to go
 
@@ -15,7 +15,7 @@ Thanks for your interest in the DIRE IMPACT Platform. Here's how to get help, as
 
 ## How we respond
 
-New issues are automatically acknowledged and routed to the DIRE-OSI maintainers (New Light Technologies) for review. Because the platform is in **active development and soft launch**, response times may vary and some known issues are already being addressed — please check existing issues and discussions before opening a new one.
+New issues are automatically acknowledged and routed to the DIRE-OSI maintainers (New Light Technologies) for review. Because the platform is in **active development and beta**, response times may vary and some known issues are already being addressed — please check existing issues and discussions before opening a new one.
 
 ## Please include
 

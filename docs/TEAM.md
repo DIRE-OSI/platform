@@ -1,6 +1,6 @@
 # Team & Partners
 
-The DIRE IMPACT Platform is a collaboration between technology, academic, and public-health institutions, funded through an open-science grant.
+DIRE is a collaboration between technology, academic, and public-health institutions, funded through an open-science grant.
 
 ## Partners
 
@@ -18,6 +18,6 @@ We welcome collaboration from researchers, public-health agencies, and data part
 
 - **Technical questions, ideas, reproducibility** — open a [discussion](https://github.com/DIRE-OSI/platform/discussions) or an [issue](https://github.com/DIRE-OSI/platform/issues).
 - **Data partnership, validation studies, or country expansion** — these involve institutional agreements; open a discussion describing your organisation and goals, and a maintainer will route you to the right contact.
-- **Security concerns** — see [SECURITY.md](../SECURITY.md).
+- **Security concerns** — see [SECURITY.md](https://github.com/DIRE-OSI/platform/blob/main/SECURITY.md).
 
 *Named individual contacts and institutional email addresses will be added here as the project's public governance is finalized.*

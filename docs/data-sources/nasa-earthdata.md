@@ -21,7 +21,7 @@ Earthdata uses **bearer (user) tokens** for programmatic access.
 - In the Earthdata Login profile, open **Generate Token**, or follow the guide at
   <https://urs.earthdata.nasa.gov/documentation/for_users/user_token>.
 - Tokens are valid for a limited period (typically ~60 days) and can be regenerated.
-- Put the token in your `.env` as `EARTHDATA_TOKEN=...` (see [`.env.example`](../../.env.example)).
+- Put the token in your `.env` as `EARTHDATA_TOKEN=...` (see [`.env.example`](https://github.com/DIRE-OSI/platform/blob/main/.env.example)).
 
 > **Token expiry is a recurring operational item** — schedule a reminder to regenerate before expiry so automated fetches don't fail.
 
