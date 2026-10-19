@@ -56,5 +56,32 @@ footer_content: >-
   funded by the Wellcome Trust. Code: Apache-2.0 · Documentation: CC BY 4.0 ·
   <a href="https://github.com/DIRE-OSI/platform/blob/main/DISCLAIMER.md">Disclaimer</a>
 
+# Navigation: titles and order for pages that carry no front matter of their own
+defaults:
+  - scope: { path: "ABOUT.md" }
+    values: { title: "About DIRE", nav_order: 3 }
+  - scope: { path: "METHODS.md" }
+    values: { title: "Methods & model card", nav_order: 4 }
+  - scope: { path: "RESEARCH_BASIS.md" }
+    values: { title: "Research basis", nav_order: 5 }
+  - scope: { path: "data-sources/README.md" }
+    values: { title: "Data sources", nav_order: 6, has_children: true, permalink: "/data-sources/" }
+  - scope: { path: "data-sources/nasa-earthdata.md" }
+    values: { title: "NASA Earthdata", nav_order: 1, parent: "Data sources" }
+  - scope: { path: "data-sources/copernicus-cds.md" }
+    values: { title: "Copernicus CDS", nav_order: 2, parent: "Data sources" }
+  - scope: { path: "data-sources/datasus-sinan.md" }
+    values: { title: "Brazil DATASUS / SINAN", nav_order: 3, parent: "Data sources" }
+  - scope: { path: "data-sources/peru-minsa.md" }
+    values: { title: "Peru MINSA / CDC Perú", nav_order: 4, parent: "Data sources" }
+  - scope: { path: "DATA_DICTIONARY.md" }
+    values: { title: "Data dictionary", nav_order: 7 }
+  - scope: { path: "TEST_DATA.md" }
+    values: { title: "Test data", nav_order: 8 }
+  - scope: { path: "ROADMAP.md" }
+    values: { title: "Roadmap", nav_order: 10 }
+  - scope: { path: "TEAM.md" }
+    values: { title: "Team & partners", nav_order: 11 }
+
 exclude:
   - _site
