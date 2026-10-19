@@ -1,8 +1,13 @@
+---
+title: "Using the dashboard"
+nav_order: 2
+---
 # Using the DIRE Dashboard
 
-This guide explains how to read and use the live DIRE dashboard at **<https://dire.impact.nltglobal.com>**. It doubles as a public FAQ for the platform. The dashboard is in **soft launch** — UX/UI and data-quality reviews are underway, and some known issues are being addressed.
+This guide explains how to read and use the live DIRE dashboard at **<https://dire.impact.nltglobal.com>**. It doubles as a public FAQ for the platform. The dashboard is in **beta**: user-experience and data-quality reviews are ongoing, and improvements are released regularly.
 
-> On first visit you'll see a **Disclaimer** and a **Soft Launch** notice. Please read them; they explain that outputs are experimental, decision-support estimates provided "as is." See [DISCLAIMER.md](https://github.com/DIRE-OSI/platform/blob/main/DISCLAIMER.md).
+{: .note }
+On first visit the dashboard shows a short notice explaining that outputs are experimental, decision-support estimates provided "as is", with guidance on how to use the forecasts and a list of known issues. Please read it before using the data. See the [disclaimer](https://github.com/DIRE-OSI/platform/blob/main/DISCLAIMER.md).
 
 ## Layout at a glance
 
@@ -12,7 +17,7 @@ The dashboard has three areas:
 2. **Map (center)** — a choropleth of administrative units shaded by risk.
 3. **Data panel (right)** — Cases, Resources, and Model Indicators for the selected country/area.
 
-A language toggle (e.g., English / Portuguese) and a **Generate Report** action are in the top bar.
+A language selector (**EN / ES / PT** — English, Spanish, Portuguese), an **About** panel and a **Generate Report** action are in the top bar.
 
 ## The Layers panel (left)
 
@@ -45,6 +50,10 @@ Use **Generate Report** in the top bar to export a customized risk report for a 
 
 - Forecasts are **1-, 2-, and 3-month-ahead estimates** and carry uncertainty that grows with the horizon — always check the **Low Confidence** layer and confidence indicators.
 - The platform is a **decision-support** tool; complement it with local knowledge, professional judgment, and official surveillance.
+
+## Known issues
+
+The dashboard lists current known issues in its notice. At the time of writing these include an ongoing **data-quality review** of predictions and resource estimates, and a review of **consistency between administrative levels** for some Brazil units. Known issues are updated as fixes are released.
 
 ## Questions or problems?
 

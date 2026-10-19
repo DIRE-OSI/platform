@@ -1,0 +1,60 @@
+title: DIRE
+description: >-
+  Disease Incidence and Resource Estimator — open documentation for
+  sub-national dengue and malaria forecasting and health-resource estimation.
+url: https://dire-osi.github.io
+baseurl: /platform
+
+remote_theme: just-the-docs/just-the-docs@v0.11.2
+plugins:
+  - jekyll-remote-theme
+  - jekyll-seo-tag
+  - jekyll-relative-links
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-titles-from-headings
+  - jekyll-default-layout
+
+relative_links:
+  enabled: true
+  collections: true
+
+color_scheme: dire
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: "Back to top"
+
+aux_links:
+  "Live dashboard":
+    - "https://dire.impact.nltglobal.com"
+  "GitHub":
+    - "https://github.com/DIRE-OSI/platform"
+aux_links_new_tab: true
+
+callouts:
+  note:
+    title: Note
+    color: blue
+  important:
+    title: Important
+    color: yellow
+  caution:
+    title: Caution
+    color: red
+
+gh_edit_link: true
+gh_edit_link_text: "Suggest an edit on GitHub"
+gh_edit_repository: "https://github.com/DIRE-OSI/platform"
+gh_edit_branch: "main"
+gh_edit_source: docs
+gh_edit_view_mode: "edit"
+
+footer_content: >-
+  DIRE is developed by UC San Diego (School of Global Policy and Strategy) and
+  New Light Technologies, with Universidad Peruana Cayetano Heredia and UNICEF,
+  funded by the Wellcome Trust. Code: Apache-2.0 · Documentation: CC BY 4.0 ·
+  <a href="https://github.com/DIRE-OSI/platform/blob/main/DISCLAIMER.md">Disclaimer</a>
+
+exclude:
+  - _site
