@@ -10,6 +10,8 @@ Open documentation for the **Disease Incidence and Resource Estimator (DIRE)** �
 - [Roadmap](ROADMAP.md)
 - [Team & partners](TEAM.md)
 - [Data sources](data-sources/README.md)
+- [Data dictionary](DATA_DICTIONARY.md)
+- [Test data](TEST_DATA.md)
 - [Processing pipelines](processing/README.md)
 
 **Get started (on GitHub):** [Install guide](https://github.com/DIRE-OSI/platform/blob/main/INSTALL.md) · [Dependencies](https://github.com/DIRE-OSI/platform/blob/main/DEPENDENCIES.md) · [Contributing](https://github.com/DIRE-OSI/platform/blob/main/CONTRIBUTING.md) · [Support](https://github.com/DIRE-OSI/platform/blob/main/SUPPORT.md) · [Repository](https://github.com/DIRE-OSI/platform)

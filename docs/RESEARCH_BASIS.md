@@ -22,7 +22,7 @@ DIRE builds on peer-reviewed work on machine-learning forecasting of mosquito-bo
 | Remote sensing & terrain | NASA MODIS, NASADEM | [NASA Earthdata](data-sources/nasa-earthdata.md) |
 | Surveillance (Brazil) | DATASUS / SINAN | [Brazil DATASUS / SINAN](data-sources/datasus-sinan.md) |
 | Surveillance (Peru) | MINSA / CDC Perú | [Peru MINSA](data-sources/peru-minsa.md) |
-| Population & housing | National censuses (Brazil 2010, 2022; Peru 2007, 2017) | — |
+| Population & housing | National censuses (Brazil 2010, 2022; Peru 2007, 2017) | [Data dictionary](DATA_DICTIONARY.md) |
 
 ## From forecasts to resources
 
