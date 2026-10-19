@@ -1,65 +1,67 @@
-# Methods & model card
+# Methods
 
-This page summarises how DIRE produces its forecasts, how they are evaluated, and where they should and should not be relied on. It follows the spirit of a *model card*: a short, structured description intended for researchers, public-health users and reviewers. Methods are under active development; this page is updated as the open pipelines are released.
+This page summarises, in preliminary form, how DIRE produces its estimates, how they are evaluated, and where they should and should not be relied upon. It follows the structure of a *model card*. Methods are under active development and this description will be refined as the open workflows are released.
 
-## At a glance
+## Summary
 
 | | |
 |---|---|
-| **Task** | Short-horizon forecasting of monthly dengue and malaria incidence |
-| **Geography** | Peru and Brazil, at administrative levels 1–3 (e.g., department / province / district) |
-| **Horizons** | Current month, +1 month, +2 months (one model per horizon) |
-| **Target** | Disease Incidence Rate (DIR, cases per 100,000), for the total population and ages 0–19, converted to expected case counts |
-| **Approach** | Stacked ensemble of complementary learners, after [Sebastianelli et al. (2024)](RESEARCH_BASIS.md) |
-| **Refresh** | Monthly, as new surveillance and climate data become available |
-| **Outputs** | Expected cases, five-tier relative risk, low-confidence flag, indicative resource needs |
+| **Task** | Short-horizon estimation of monthly dengue and malaria incidence |
+| **Setting** | Peru and Brazil; administrative levels 1–3 (e.g. department / province / district) |
+| **Horizons** | Current month and the following two months |
+| **Target** | Disease Incidence Rate (DIR, cases per 100,000) for the total population and for ages 0–19, converted to expected case counts |
+| **Approach** | Stacked ensemble of complementary learners, building on Sebastianelli *et al.* (2024) |
+| **Update cycle** | Monthly estimation; periodic retraining as new surveillance data become available |
+| **Outputs** | Expected cases, relative risk tiers, confidence classes and indicative resource requirements |
 
-## Inputs
+## Data
 
-- **Climate:** temperature, precipitation and humidity from Copernicus ERA5-Land, aggregated to administrative unit × month, including lagged values.
-- **Environment:** vegetation indices and land cover (NASA MODIS) and elevation (NASADEM).
-- **Population & housing:** census-derived population, age structure, urbanisation and housing characteristics.
-- **Recent incidence:** aggregate reported cases by administrative unit and month from national surveillance (Brazil DATASUS/SINAN; Peru MINSA/CDC Perú).
+| Domain | Product / source | Processing |
+|---|---|---|
+| Climate | Copernicus ERA5-Land hourly reanalysis (0.1°): 2 m air and dew-point temperature, precipitation, surface pressure, 10 m wind | Aggregated to monthly values (precipitation totals; temperature mean, minimum and maximum; other variables averaged); humidity derived from temperature and dew point; zonal means per administrative unit |
+| Vegetation | NASA MODIS MOD13A3 (v6.1), monthly, 1 km | Zonal statistics per administrative unit |
+| Land cover | NASA MODIS MCD12Q1 (v6.1), annual, 500 m | Class proportions per administrative unit |
+| Terrain | NASADEM (~30 m) | Summary elevation statistics, computed once |
+| Population and socio-economic context | National censuses: Brazil 2010 and 2022 (IBGE); Peru 2007 and 2017 (INEI) | Housing, water and sanitation, electricity, literacy and population structure per unit |
+| Surveillance | Brazil DATASUS/SINAN; Peru national epidemiological surveillance | Aggregated to monthly counts per administrative unit; total and ages 0–19 |
 
-See [Data sources](data-sources/README.md) for access, licensing and caveats.
+See [Data sources](data-sources/README.md) for access and licensing, and the [Data dictionary](DATA_DICTIONARY.md) for structure.
 
 ## Modelling approach
 
-1. **Preparation.** Inputs are cleaned, aligned to a common administrative-unit × month grid, and scaled. Scaling and dimensionality-reduction steps are fitted on training data only and reused unchanged at forecast time, to avoid information leakage.
-2. **Base learners.** Gradient-boosted trees (CatBoost), a support-vector regressor and a recurrent neural network (LSTM) each learn the relationship between inputs and incidence; a short-term polynomial trend provides an additional signal.
-3. **Ensemble.** A random-forest meta-model combines the base-learner predictions into the final estimate.
-4. **Horizons.** Separate models are trained for each forecast horizon, so that each is evaluated and tuned for the lead time it serves.
-5. **Recent-data gaps.** Surveillance data typically lag by weeks. Missing recent months are filled with a data-driven approach (model-based for the most recent months, historical monthly patterns beyond that) before forecasting. This approach is under continued evaluation.
-6. **Cross-level consistency.** Forecasts at different administrative levels are reconciled so that sub-national estimates are coherent with higher-level totals.
+1. **Preparation.** Inputs are checked for temporal continuity, aligned to a common unit-by-month grid and scaled. Covariates are grouped (climate, geographic, socio-economic) and reduced in dimension. Seasonality is represented with cyclical month encoding. All scaling and reduction steps are fitted on training data only and reused unchanged at estimation time, to avoid information leakage.
+2. **Base learners.** Gradient-boosted decision trees (CatBoost), support-vector regression and a recurrent neural network (LSTM) are trained on sequences of recent observations; a short-term polynomial trend provides an additional signal.
+3. **Ensemble.** A random-forest meta-learner combines the base-learner outputs into a final estimate.
+4. **Horizons.** Separate models are trained for each horizon, so that each can be evaluated for the lead time it serves.
+5. **Reporting delay.** Where recent surveillance data are not yet available, missing months are provisionally filled using a data-driven procedure before estimation. This procedure is under continued evaluation.
+6. **Cross-level consistency.** Estimates at different administrative levels are reconciled so that sub-national values are coherent with higher-level totals.
 
-## Evaluation
+## Evaluation design
 
-- **Held-out testing.** Models are trained, tuned on a validation period, and assessed on a later test period not used in training, mimicking real forecasting conditions.
-- **Metrics.** Normalised root-mean-square error (NRMSE) and related error measures, reported by horizon, administrative level and disease.
-- **Baselines.** Performance is compared against simple reference forecasts, such as the historical average for the same calendar month, to show where the model adds value.
+- **Held-out testing.** Models are trained and tuned on earlier periods and assessed on more recent periods withheld from training.
+- **Metrics.** Root-mean-square error (RMSE), normalised RMSE (NRMSE) and the coefficient of determination (R²), reported by horizon, administrative level and disease.
+- **Reference forecasts.** Performance is compared with simple baselines, such as the historical average for the same calendar month.
+- **Confidence classes.** Unit-level error is used to assign relative confidence classes; units with lower confidence are flagged on the dashboard.
 - **Partner review.** Outputs are reviewed with in-country public-health partners before major updates are published.
 
-Evaluation summaries will be published here as they are finalised.
+Evaluation summaries will be published as they are finalised.
 
-## Outputs and how to read them
+## Outputs and interpretation
 
-- **Expected cases** for each unit, month and horizon.
-- **Risk tiers** (Lowest → Highest) that rank units relative to one another; they are not epidemic thresholds.
-- **Low-confidence flag** where inputs are sparse or uncertainty is elevated; **No data** where inputs are insufficient.
-- **Resource estimates** that translate expected cases into indicative prevention, diagnosis, treatment and program needs (see [Research basis](RESEARCH_BASIS.md#from-forecasts-to-resources)).
+- **Expected cases** by unit, month and horizon.
+- **Risk tiers** (lowest to highest) that rank units relative to one another; they are not epidemic thresholds.
+- **Confidence flags** where inputs are sparse or uncertainty is elevated; **no data** where inputs are insufficient.
+- **Resource estimates** that translate expected cases into indicative requirements for prevention, diagnosis, treatment and programme operations (see [Research basis](RESEARCH_BASIS.md#from-estimates-to-resources)).
 
 ## Known limitations
 
-- **Reporting delay and revision.** Recent surveillance data are often provisional and later revised; forecasts are updated as data mature.
-- **Uncertainty grows with horizon.** The +2-month forecast is generally less certain than the current-month estimate.
-- **Low-count areas.** Units with few cases produce noisier relative errors.
-- **Novel conditions.** Unusual climate events, new serotypes, interventions or reporting changes may not be reflected in historical training data.
-- **Data dependencies.** Some inputs depend on periodic deliveries from national partners.
+- **Reporting delay and revision.** Recent surveillance data are often provisional and subsequently revised.
+- **Uncertainty increases with horizon.** Estimates for later months are generally less certain.
+- **Low-count settings.** Units with few cases yield noisier relative errors.
+- **Novel conditions.** Unusual climatic events, changes in circulating serotypes, interventions or reporting practices may not be represented in historical data.
+- **Static socio-economic inputs.** Census-derived indicators are updated infrequently.
+- **Data dependencies.** Some inputs rely on periodic deliveries from national partners.
 
 ## Intended use
 
-DIRE is a **decision-support** tool for planning and situational awareness by public-health agencies, researchers and humanitarian responders. It complements — and does not replace — official surveillance, local knowledge and professional judgement. It is **not** intended for individual clinical decisions or as an official case count. See the [disclaimer](https://github.com/DIRE-OSI/platform/blob/main/DISCLAIMER.md).
-
-## Versioning
-
-Methods, parameters and evaluation results are versioned with each tagged release of this repository (see the [Changelog](https://github.com/DIRE-OSI/platform/blob/main/CHANGELOG.md) and the [Roadmap](ROADMAP.md)).
+DIRE is a **decision-support** resource for planning and situational awareness by public-health agencies, researchers and humanitarian organisations. It complements, and does not replace, official surveillance, local knowledge and professional judgement, and is not intended for individual clinical decisions or as an official case count. See the [disclaimer](https://github.com/DIRE-OSI/platform/blob/main/DISCLAIMER.md).

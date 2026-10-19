@@ -61,7 +61,7 @@ defaults:
   - scope: { path: "ABOUT.md" }
     values: { title: "About DIRE", nav_order: 3 }
   - scope: { path: "METHODS.md" }
-    values: { title: "Methods & model card", nav_order: 4 }
+    values: { title: "Methods", nav_order: 4 }
   - scope: { path: "RESEARCH_BASIS.md" }
     values: { title: "Research basis", nav_order: 5 }
   - scope: { path: "data-sources/README.md" }
