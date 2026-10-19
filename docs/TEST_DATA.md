@@ -6,7 +6,7 @@ DIRE's open pipelines are designed to be run and validated **without access to r
 
 - **Aggregate only.** Case data are counts by administrative unit and month. No individual records, identifiers, or patient locations are ever included.
 - **Clearly labelled.** Synthetic data are marked `SYNTHETIC` in file names and metadata and must never be interpreted as observed surveillance data or as DIRE forecasts.
-- **Schema-faithful.** Test data follow the same column structure as the production inputs, so code paths are exercised realistically.
+- **Schema-faithful.** Test data follow the same column structure as the production inputs (see [Data dictionary](DATA_DICTIONARY.md)), so code paths are exercised realistically.
 
 ## What is planned
 
