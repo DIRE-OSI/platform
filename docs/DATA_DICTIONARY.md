@@ -8,7 +8,7 @@ This page describes the **structure** of DIRE's analysis-ready inputs and output
 |---|---|---|
 | `country` | text | ISO 3166-1 alpha-3 code (`PER`, `BRA`) |
 | `admin_level` | integer | Administrative level: 1 (department / state), 2 (province / micro-region), 3 (district / municipality) |
-| `admin_id` | text | Stable unit identifier (national geocode, cross-walked to GADM) |
+| `admin_id` | text | Stable unit identifier (national administrative geocode) |
 | `admin_name` | text | Unit name as published by the national statistics office |
 | `year`, `month` | integer | Calendar year and month of the observation or forecast |
 | `disease` | text | `dengue` or `malaria` |
@@ -46,8 +46,8 @@ This page describes the **structure** of DIRE's analysis-ready inputs and output
 | `target_month` | YYYY-MM | Month being forecast |
 | `pred_cases` | count | Expected cases, all ages |
 | `pred_dir_total`, `pred_dir_0_19` | per 100,000 | Predicted incidence rates |
-| `risk_tier` | 1–5 | Relative risk tier (Lowest → Highest) |
-| `low_confidence` | boolean | Elevated uncertainty or sparse inputs |
+| `risk_tier` | 1–5 | Risk tier (Lowest → Highest); see [Methods](METHODS.md#outputs-and-interpretation) |
+| `confidence` | high / medium / low | Relative confidence class from unit-level validation error |
 
 ## Synthetic data
 

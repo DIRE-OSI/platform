@@ -2,7 +2,7 @@
 
 **Python pipeline — remote-sensing & climate covariates.**
 
-This pipeline fetches and engineers the environmental predictors used by the DIRE forecasting model, turning raw satellite and climate products into analysis-ready covariate tables keyed by administrative unit (GADM Level 3) and month.
+This pipeline fetches and engineers the environmental predictors used by the DIRE forecasting model, turning raw satellite and climate products into analysis-ready covariate tables keyed by administrative unit and month.
 
 ## Inputs
 

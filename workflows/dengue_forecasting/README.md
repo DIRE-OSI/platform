@@ -7,7 +7,7 @@ This pipeline combines the engineered environmental covariates (from `workflows/
 ## Method
 
 - **Ensemble model:** CatBoost, SVM, and LSTM base learners whose predictions are synthesized by a Random Forest, following Sebastianelli et al. (2024).
-- **Outputs:** predicted case counts, five-tier risk classification, and confidence intervals per GADM Level 3 administrative unit per month.
+- **Outputs:** predicted case counts, five-tier risk classification, and confidence classes per administrative unit per month.
 
 ## Reproducing without credentials
 

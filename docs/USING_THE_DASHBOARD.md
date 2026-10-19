@@ -17,17 +17,17 @@ The dashboard has three areas:
 2. **Map (center)** — a choropleth of administrative units shaded by risk.
 3. **Data panel (right)** — Cases, Resources, and Model Indicators for the selected country/area.
 
-A language selector (**EN / ES / PT** — English, Spanish, Portuguese), an **About** panel and a **Generate Report** action are in the top bar.
+A language selector (**EN / ES / PT** — English, Spanish, Portuguese), an **About** panel, **release notes** with the current version, and a **Generate Report** action are in the top bar. Forecasts are updated at the start of each month.
 
 ## The Layers panel (left)
 
 - **Country** — the geography to view (initial coverage: Peru and Brazil; more being onboarded).
 - **Disease** — Dengue or Malaria (more being onboarded).
-- **Administrative Level** — the granularity (e.g., Department), down to GADM Level 3 (department/district).
+- **Administrative Level** — the granularity (e.g., Department), down to the finest level available: district for Peru (department → province → district) and municipality for Brazil (state → municipality).
 - **Prediction Period** — a slider for the forecast horizon: **Current**, **+1 month**, **+2 months** (i.e., the current month plus the next two).
 - **Filters / Risk Level legend** — the five risk tiers, plus two special layers:
   - **Lowest → Highest** — five-tier predicted risk.
-  - **Low Confidence Prediction** — the model is less certain for this unit (hatched).
+  - **Low Confidence Prediction** — units in the lowest of three confidence classes (hatched).
   - **No Data** — insufficient inputs for this unit (grey).
 - **Health Centers** — toggle facility locations on the map.
 - **Basemap** — the background map style (e.g., Grayscale).
@@ -38,13 +38,13 @@ Each administrative unit is shaded by its risk tier for the selected disease, mo
 
 ## The data panel (right) — three views
 
-- **Cases** — predicted case counts for the current month and the next two, alongside a **Historical Reported Cases** chart (a monthly overview of reported surveillance data). You can **download** the current predictions by administrative unit. *Note: reported data may lag the current month by several weeks depending on the source.*
+- **Cases** — predicted case counts for the current month and the next two, alongside a **Historical Reported Cases** chart (a monthly overview of reported surveillance data). You can **download** predictions or resource estimates as CSV, for the whole country and level or for a selected unit. *Note: reported data may lag the current month by several weeks depending on the source.*
 - **Resources** — resource-allocation estimates derived from predicted incidence (quantity and cost of commodities and personnel needed for control and treatment), to support health-system planning.
 - **Model Indicators** — the covariate layers (remote-sensing, climate, socio-economic) and model-performance/uncertainty indicators that feed the forecast.
 
 ## Generate Report
 
-Use **Generate Report** in the top bar to export a customized risk report for a chosen geography and time period — predicted incidence maps and tables, risk-tier breakdowns, historical trends, resource recommendations, and data-provenance/confidence notes.
+Use **Generate Report** in the top bar to export a customized risk report for a chosen geography and time period — predicted incidence maps and tables, risk-tier breakdowns, historical trends, resource recommendations, and data-provenance/confidence notes. The report can be downloaded as a PDF.
 
 ## How to read the forecasts responsibly
 

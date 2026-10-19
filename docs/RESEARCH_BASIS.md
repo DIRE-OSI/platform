@@ -17,6 +17,12 @@ DIRE adopts as its starting point the reproducible ensemble approach of Sebastia
 
 DIRE translates expected cases into indicative requirements across four areas: **prevention** (vector control, protective measures, community education and awareness), **diagnosis**, **treatment** (general and intensive care) and **programme operations** (personnel and management), with associated costs. Parameters are programme- and country-specific and will be documented as they are released. Resource estimates are planning aids, not prescriptions.
 
+In the current beta:
+
+- **Dengue** estimates cover prevention (vaccination, larvicide and adulticide, fumigation teams and equipment, biological vector-control releases, repellents, nets and screens for pregnant women, awareness and education), diagnosis (serological, virological and molecular testing), treatment (general hospital and intensive care) and programme operations (outreach, base and variable staff, overhead).
+- **Malaria** estimates apply unit costs to drivers such as expected incidence or population.
+- Costs are shown in US dollars and in local currency (Peruvian sol, Brazilian real). Resource parameters and their sources are under review with partners.
+
 ## Selected references
 
 1. Sebastianelli, A., *et al.* (2024). A reproducible ensemble machine learning approach to forecast dengue outbreaks. *Scientific Reports*, 14, 3807. [doi:10.1038/s41598-024-52796-9](https://doi.org/10.1038/s41598-024-52796-9)
