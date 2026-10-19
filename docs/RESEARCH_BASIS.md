@@ -6,12 +6,12 @@ DIRE builds on peer-reviewed work on machine-learning forecasting of mosquito-bo
 
 - **Sebastianelli, A., et al. (2024).** *A machine learning approach to dengue and malaria incidence forecasting.* *Scientific Reports.* DOI: [10.1038/s41598-024-52796-9](https://doi.org/10.1038/s41598-024-52796-9)
 
-  The study combines Earth-observation and climate covariates with surveillance data in an ensemble of complementary learners. DIRE adopts this ensemble approach as its starting point and extends it for monthly, multi-horizon, multi-level (administrative 1–3) operational forecasting. How DIRE implements and evaluates the approach is documented in the methods notes (forthcoming).
+  The study combines Earth-observation and climate covariates with surveillance data in an ensemble of complementary learners. DIRE adopts this ensemble approach as its starting point and extends it for monthly, multi-horizon, multi-level (administrative 1–3) operational forecasting. See [Methods & model card](METHODS.md) for how DIRE implements and evaluates the approach.
 
 ## Scientific rationale
 
 - **Climate and environment shape transmission.** Temperature, rainfall, humidity, vegetation and land cover influence vector breeding, survival and viral replication, with lagged effects of several weeks to months. These relationships make short-horizon forecasting feasible.
-- **Recent incidence carries strong signal.** Case counts in recent months are among the most informative predictors; reporting delays therefore directly affect forecast quality.
+- **Recent incidence carries strong signal.** Case counts in recent months are among the most informative predictors; reporting delays therefore directly affect forecast quality (see [Methods & model card](METHODS.md#known-limitations)).
 - **Population structure matters.** Census-derived population, age structure, urbanisation and housing inform both incidence rates and the conversion of rates into expected cases and resource needs.
 
 ## Data foundations
