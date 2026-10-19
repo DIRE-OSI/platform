@@ -25,7 +25,7 @@ Register at **<https://cds.climate.copernicus.eu/>** (ECMWF login).
   url: https://cds.climate.copernicus.eu/api
   key: <YOUR-API-KEY>
   ```
-- For this repo, also record the key as `CDS_API_KEY=...` in your `.env` (see [`.env.example`](../../.env.example)).
+- For this repo, also record the key as `CDS_API_KEY=...` in your `.env` (see [`.env.example`](https://github.com/DIRE-OSI/platform/blob/main/.env.example)).
 
 ## 3. Accept the dataset licence
 
