@@ -1,3 +1,8 @@
+---
+title: "Processing pipelines"
+nav_order: 9
+permalink: /processing/
+---
 # Processing pipelines
 
 DIRE's forecasts are produced by two pipelines that run in sequence. This directory documents how to run each end to end.
