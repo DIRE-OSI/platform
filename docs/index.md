@@ -5,6 +5,7 @@ Open documentation for the **Disease Incidence and Resource Estimator (DIRE)** ‚
 - [üåê Live dashboard](https://dire.impact.nltglobal.com)
 - [Using the dashboard](USING_THE_DASHBOARD.md)
 - [About the platform](ABOUT.md)
+- [Methods & model card](METHODS.md)
 - [Research basis & references](RESEARCH_BASIS.md)
 - [Roadmap](ROADMAP.md)
 - [Team & partners](TEAM.md)
