@@ -30,3 +30,15 @@ This document describes how we cut a release of `DIRE-OSI/platform` and the open
 ## Notes
 
 - The internal production source lives in a separate, private repository. Approved content is promoted here one-way through a gated pipeline (see the project's setup plan); this repository never pushes back to production.
+
+## Preparing v0.1.0 (first citable release)
+
+Draft checklist; nothing is tagged until the project team approves.
+
+- [ ] Partner review of documentation content (methods, research basis, data dictionary).
+- [ ] Decide whether synthetic test data and the quick-start notebook ship in v0.1.0 or v0.2.0.
+- [ ] Confirm the Zenodo account owner for the `DIRE-OSI` organisation and enable the GitHub↔Zenodo integration for `DIRE-OSI/platform`.
+- [ ] Confirm `CITATION.cff` authors, affiliations and ORCID iDs.
+- [ ] Move the `[Unreleased]` notes in [CHANGELOG.md](CHANGELOG.md) under `v0.1.0` with the release date.
+- [ ] Tag `v0.1.0` and publish the GitHub Release; Zenodo mints the DOI.
+- [ ] Add the DOI badge to `README.md` and the DOI to `CITATION.cff` and the [Research basis](docs/RESEARCH_BASIS.md#how-to-cite-dire) page.

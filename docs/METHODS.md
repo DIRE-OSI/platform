@@ -62,4 +62,4 @@ DIRE is a **decision-support** tool for planning and situational awareness by pu
 
 ## Versioning
 
-Methods, parameters and evaluation results are versioned with each tagged release of this repository (see the [Roadmap](ROADMAP.md)).
+Methods, parameters and evaluation results are versioned with each tagged release of this repository (see the [Changelog](https://github.com/DIRE-OSI/platform/blob/main/CHANGELOG.md) and the [Roadmap](ROADMAP.md)).
