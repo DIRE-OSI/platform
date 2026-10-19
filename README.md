@@ -17,7 +17,7 @@
 
 ---
 
-**Phase 0 — initial release (work in progress).** This repository is being populated, in coordination with the project team at **UCSD and NLT**, with the data-source documentation and Python/R processing pipelines for DIRE. It is the open, community-facing home of the project, released under the Wellcome Trust open-source grant conditions. The forecasting API and interactive dashboard are live at [dire.impact.nltglobal.com](https://dire.impact.nltglobal.com); their source code will follow in subsequent phases. See [docs/ROADMAP.md](docs/ROADMAP.md) for the full release plan.
+**Preliminary release.** This repository is being populated, in coordination with the project team at **UCSD and NLT**, with the data-source documentation and Python/R processing pipelines for DIRE. It is the open, community-facing home of the project, released under the Wellcome Trust open-source grant conditions. The forecasting API and interactive dashboard are live at [dire.impact.nltglobal.com](https://dire.impact.nltglobal.com); their source code will follow in subsequent phases. See [docs/ROADMAP.md](docs/ROADMAP.md) for the full release plan.
 
 ---
 
@@ -36,8 +36,8 @@ The platform integrates:
 
 Risk estimates are mapped to five tiers (Lowest → Highest) at **GADM Level 3** (department/district) granularity and are refreshed monthly.
 
-**Partners:** New Light Technologies (NLT) · UC San Diego School of Global Policy and Strategy · Universidad Peruana Cayetano Heredia (UPCH)
-**Funder:** Wellcome Trust
+**Collaborating institutions:** UC San Diego School of Global Policy and Strategy · New Light Technologies (NLT) · Universidad Peruana Cayetano Heredia (UPCH) · UNICEF
+**Funder:** Wellcome
 
 ---
 
@@ -79,7 +79,7 @@ New issues are automatically acknowledged and routed to the maintainers.
 
 ---
 
-## Repository contents (Phase 0)
+## Repository contents
 
 ```
 platform/
@@ -104,14 +104,14 @@ platform/
 
 ### What is *not* here yet
 
-| Component | Planned phase |
+| Component | Indicative stage ([Roadmap](docs/ROADMAP.md)) |
 |---|---|
-| Prediction API / backend service | Phase 1 |
-| Containerized one-command local runner | Phase 1 |
-| Automated test suite + CI | Phase 1 |
-| Interactive dashboard source code | Phase 2 |
-| Cloud deployment / infrastructure-as-code | Phase 3 |
-| Zenodo DOI archive | Phase 3 |
+| Prediction API / backend service | Under consideration |
+| Containerized local runner | Stage III (open workflows) |
+| Automated test suite + CI | Stage III (open workflows) |
+| Interactive dashboard source code | Under consideration |
+| Cloud deployment / infrastructure-as-code | Under consideration |
+| Archival release with DOI | Stage IV (archival release) |
 
 ---
 
@@ -192,7 +192,7 @@ Full instructions live in [docs/processing/](docs/processing/). The forecasting 
 If you use this software or the data pipelines, please cite both the software release and the underlying methodology paper.
 
 - **Software:** New Light Technologies, Inc. (2026). *DIRE: Disease Incidence and Resource Estimator.* GitHub. See [CITATION.cff](CITATION.cff).
-- **Methodology:** Sebastianelli, A., et al. (2024). *A machine learning approach to dengue and malaria incidence forecasting.* Scientific Reports. DOI: [10.1038/s41598-024-52796-9](https://doi.org/10.1038/s41598-024-52796-9)
+- **Methodology:** Sebastianelli, A., et al. (2024). *A reproducible ensemble machine learning approach to forecast dengue outbreaks.* Scientific Reports, 14, 3807. DOI: [10.1038/s41598-024-52796-9](https://doi.org/10.1038/s41598-024-52796-9)
 
 ---
 
