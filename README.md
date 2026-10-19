@@ -34,7 +34,7 @@ The platform integrates:
 - **Epidemiological surveillance** — Brazil DATASUS SINAN and Peru MINSA dengue case records
 - **An ensemble ML model** — CatBoost, SVM, and LSTM models synthesized with a Random Forest, as described in Sebastianelli et al. (2024)
 
-Risk estimates are mapped to five tiers (Lowest → Highest) at **GADM Level 3** (department/district) granularity and are refreshed monthly.
+Risk estimates are mapped to five tiers (Lowest → Highest) for sub-national administrative units (Peru department, province and district; Brazil state and municipality) and are refreshed monthly.
 
 **Collaborating institutions:** UC San Diego School of Global Policy and Strategy · New Light Technologies (NLT) · Universidad Peruana Cayetano Heredia (UPCH) · UNICEF
 **Funder:** Wellcome
@@ -130,7 +130,7 @@ External data sources
                                                    │
                                                    ▼
                                 Forecast outputs (predicted cases, risk tier,
-                                confidence interval) by GADM L3 admin unit × month
+                                confidence class) by admin unit × month
                                                    │
                                                    ▼
                                 dire.impact.nltglobal.com (live dashboard)

@@ -4,6 +4,9 @@ Notable changes to this repository are recorded here, following [Keep a Changelo
 
 ## [Unreleased]
 
+### Changed
+- Documentation aligned with the live dashboard: administrative levels by country, risk-tier and confidence-class descriptions, data downloads and reports, and resource-estimate categories.
+
 ### Added
 - Documentation site with methods, research basis, data sources, data dictionary, test-data principles and an indicative roadmap.
 - Guidance on using the live dashboard.

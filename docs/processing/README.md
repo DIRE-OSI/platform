@@ -15,7 +15,7 @@ Fetches and engineers the remote-sensing and climate covariates (MODIS, NASADEM,
 
 ## 2. Forecasting pipeline — `workflows/dengue_forecasting/`
 
-Combines the engineered covariates with surveillance case data, runs the ensemble model (CatBoost + SVM + LSTM synthesized by a Random Forest), and produces predicted cases, risk tiers, and confidence intervals per GADM Level 3 unit per month.
+Combines the engineered covariates with surveillance case data, runs the ensemble model (CatBoost + SVM + LSTM synthesized by a Random Forest), and produces predicted cases, risk tiers, and confidence intervals per administrative unit per month.
 
 > `forecasting-pipeline.md` — full run instructions will be added here.
 
