@@ -7,4 +7,5 @@ Notable changes to this repository are recorded here, following [Keep a Changelo
 ### Added
 - Documentation site with methods, research basis, data sources, data dictionary, test-data principles and an indicative roadmap.
 - Guidance on using the live dashboard.
+- Release guidance for keeping documentation aligned with updates to the live dashboard.
 - Community and governance files: licensing (Apache-2.0 for code, CC BY 4.0 for documentation), contribution guidelines, code of conduct, security and support policies, and citation metadata.

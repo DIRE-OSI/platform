@@ -27,6 +27,14 @@ This document describes how we cut a release of `DIRE-OSI/platform` and the open
 - [ ] Disclaimer and "in active development / in coordination with UCSD & NLT" language intact.
 - [ ] Export-control / UCSD authorization for any newly-published code confirmed.
 
+## Alignment with the live dashboard
+
+The documentation here describes the methods, data sources and behaviour of the live dashboard at [dire.impact.nltglobal.com](https://dire.impact.nltglobal.com). To keep the two consistent:
+
+- When a dashboard update changes methods, data sources, forecast horizon or user-facing behaviour, the relevant pages (Methods, Data dictionary, Using the dashboard) are reviewed and updated in the same cycle.
+- A short, public-safe summary of each dashboard update is added to `CHANGELOG.md` under a **Live platform** heading, with the date it went live.
+- Documentation describes what is live. Planned or in-review changes are described only in indicative terms on the [Roadmap](docs/ROADMAP.md).
+
 ## Notes
 
 - The internal production source lives in a separate, private repository. Approved content is promoted here one-way through a gated review process; this repository never pushes back to production.
