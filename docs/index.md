@@ -14,6 +14,8 @@ An open-science initiative for sub-national forecasting of mosquito-borne diseas
 
 [Live dashboard](https://dire.impact.nltglobal.com){: .btn .btn-primary .mr-2 }
 [Methods](METHODS.md){: .btn .mr-2 }
+[Release notes](https://github.com/DIRE-OSI/platform/releases){: .btn .mr-2 }
+[Give feedback](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml){: .btn .mr-2 }
 [Source repository](https://github.com/DIRE-OSI/platform){: .btn }
 
 ---
@@ -47,6 +49,14 @@ Roles are indicative and may evolve as the collaboration develops. See [Team &am
 | [Data sources](data-sources/README.md) · [Data dictionary](DATA_DICTIONARY.md) | Inputs, provenance, licensing and data structure |
 | [Test data](TEST_DATA.md) · [Processing pipelines](processing/README.md) | Reproducibility without restricted data |
 | [Roadmap](ROADMAP.md) | Indicative development pathway |
+| [Release notes](https://github.com/DIRE-OSI/platform/releases) | What changed in each update to the live dashboard |
+
+## Feedback and updates
+
+- **Feedback, problems or ideas about the dashboard:** use the [dashboard feedback form](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml) (English, Spanish or Portuguese). It needs a free GitHub account, and what you post is public.
+- **Questions and discussion:** [Discussions](https://github.com/DIRE-OSI/platform/discussions).
+- **Release notes:** [Releases](https://github.com/DIRE-OSI/platform/releases). To be notified of new versions, choose **Watch → Custom → Releases** on the repository page.
+- **Security or sensitive matters:** report privately through [SECURITY.md](https://github.com/DIRE-OSI/platform/blob/main/SECURITY.md).
 
 ## How to cite
 

@@ -3,9 +3,9 @@ contact_links:
   - name: 💬 Questions & ideas (Discussions)
     url: https://github.com/DIRE-OSI/platform/discussions
     about: Ask questions, propose covariates/diseases/countries, or discuss the research. Please use Discussions rather than Issues for open-ended topics.
-  - name: 🌐 Live dashboard feedback
-    url: https://dire.impact.nltglobal.com
-    about: To give feedback on the live DIRE dashboard, use the feedback form on the site.
-  - name: 🔒 Report a security vulnerability
-    url: https://github.com/DIRE-OSI/platform/security/policy
-    about: Please report security issues privately, not as a public issue.
+  - name: 📰 Dashboard release notes
+    url: https://github.com/DIRE-OSI/platform/releases
+    about: What changed in each version of the live dashboard. Use "Watch, then Custom, then Releases" on this repository to be notified of new versions.
+  - name: 🔒 Report a security vulnerability or a sensitive matter
+    url: https://github.com/DIRE-OSI/platform/security/advisories/new
+    about: Reported privately to the maintainers. Use this instead of a public issue for security problems or anything confidential.
