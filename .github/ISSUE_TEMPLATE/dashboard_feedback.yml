@@ -1,0 +1,66 @@
+name: "💬 Dashboard feedback / Comentarios / Comentários"
+description: "Feedback, a problem, or a suggestion about the live DIRE dashboard. / Comentarios o problemas sobre el panel. / Comentários ou problemas sobre o painel."
+title: "[Dashboard] "
+labels: ["dashboard-feedback", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping improve DIRE. **This report is public.** Please do not include personal information, patient or health records, credentials, or anything confidential. For security issues use the [private security report](https://github.com/DIRE-OSI/platform/security/advisories/new) instead.
+
+        Gracias por ayudar a mejorar DIRE. **Este reporte es público**: no incluya datos personales ni de salud. / Obrigado por ajudar a melhorar o DIRE. **Este relato é público**: não inclua dados pessoais ou de saúde.
+
+        You may write in English, Spanish or Portuguese. / Puede escribir en español. / Pode escrever em português.
+  - type: dropdown
+    id: type
+    attributes:
+      label: "Type / Tipo"
+      options:
+        - "Something is not working / Algo no funciona / Algo não funciona"
+        - "Data looks wrong / Los datos parecen incorrectos / Os dados parecem incorretos"
+        - "Suggestion or new feature / Sugerencia / Sugestão"
+        - "General feedback / Comentario general / Comentário geral"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: "What happened, or what would you like? / ¿Qué pasó o qué le gustaría? / O que aconteceu ou o que gostaria?"
+    validations:
+      required: true
+  - type: textarea
+    id: where
+    attributes:
+      label: "Where in the dashboard? / ¿Dónde en el panel? / Onde no painel?"
+      description: "Country, disease, administrative level, month, and the page or panel (Cases, Resources, Model indicators, report, download). / País, enfermedad, nivel administrativo, mes y sección."
+      placeholder: "e.g. Peru, Dengue, Department, November 2026, Cases panel"
+    validations:
+      required: false
+  - type: dropdown
+    id: priority
+    attributes:
+      label: "How much does this affect your use? / ¿Cuánto le afecta? / Quanto o afeta?"
+      options:
+        - "Low / Bajo / Baixo"
+        - "Medium / Medio / Médio"
+        - "High: I cannot use the dashboard for my work / Alto / Alto"
+    validations:
+      required: false
+  - type: input
+    id: version
+    attributes:
+      label: "Dashboard version (optional) / Versión / Versão"
+      description: "Shown under Release notes in the top bar, e.g. v1.1.0."
+    validations:
+      required: false
+  - type: dropdown
+    id: role
+    attributes:
+      label: "Your role (optional) / Su rol / Sua função"
+      options:
+        - "Public-health program or ministry / Salud pública o ministerio / Saúde pública ou ministério"
+        - "Researcher / Investigador / Pesquisador"
+        - "Partner organization / Organización asociada / Organização parceira"
+        - "Other / Otro / Outro"
+    validations:
+      required: false

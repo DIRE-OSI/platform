@@ -17,7 +17,7 @@ The dashboard has three areas:
 2. **Map (center)** — a choropleth of administrative units shaded by risk.
 3. **Data panel (right)** — Cases, Resources, and Model Indicators for the selected country/area.
 
-A language selector (**EN / ES / PT** — English, Spanish, Portuguese), an **About** panel, **release notes** with the current version, and a **Generate Report** action are in the top bar. Forecasts are updated at the start of each month.
+A language selector (**EN / ES / PT** — English, Spanish, Portuguese), an **About** panel, **release notes** with the current version, and a **Generate Report** action are in the top bar. Forecasts are updated at the start of each month. The full history of release notes is published under this repository's [Releases](https://github.com/DIRE-OSI/platform/releases).
 
 ## The Layers panel (left)
 
@@ -53,10 +53,12 @@ Use **Generate Report** in the top bar to export a customized risk report for a 
 
 ## Known issues
 
-The dashboard lists current known issues in its notice. At the time of writing these include an ongoing **data-quality review** of predictions and resource estimates, and a review of **consistency between administrative levels** for some Brazil units. Known issues are updated as fixes are released.
+The dashboard lists current known issues in its notice. At the time of writing these include an ongoing **data-quality review** of predictions and resource estimates, a review of **consistency between administrative levels** for some Brazil units, and **incomplete Brazil malaria counts** (the current source does not yet include cases reported in the Amazon region). Known issues are updated as fixes are released.
 
-## Questions or problems?
+## Questions, problems or feedback?
 
+- **Feedback or a problem with the dashboard:** open a [Dashboard feedback](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml) issue, in English, Spanish or Portuguese. The dashboard's "Submit Feedback" link opens the same form.
+- **Questions and ideas:** start a [Discussion](https://github.com/DIRE-OSI/platform/discussions).
+- **What changed:** see the [Releases](https://github.com/DIRE-OSI/platform/releases).
 - **How the platform works, the science, the data:** see [ABOUT.md](ABOUT.md) and [RESEARCH_BASIS.md](RESEARCH_BASIS.md).
-- **Report a bug or ask a question:** see [SUPPORT.md](https://github.com/DIRE-OSI/platform/blob/main/SUPPORT.md).
-- **Feedback on the live dashboard:** use the feedback form on the site.
+- **Anything confidential or security-related:** see [SECURITY.md](https://github.com/DIRE-OSI/platform/blob/main/SECURITY.md).
