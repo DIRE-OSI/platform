@@ -41,7 +41,7 @@ jobs:
               body: [
                 `Thanks for opening this issue — the DIRE-OSI maintainers (${mentions}) have been notified and will review it.`,
                 ``,
-                `For open-ended questions and ideas, you can also use [Discussions](../../discussions).`,
-                `DIRE is in beta, so response times may vary. Release notes are under [Releases](../../releases).`,
+                `For open-ended questions and ideas, you can also use [Discussions](https://github.com/${context.repo.owner}/${context.repo.repo}/discussions).`,
+                `DIRE is in beta, so response times may vary. Release notes are under [Releases](https://github.com/${context.repo.owner}/${context.repo.repo}/releases).`,
               ].join('\n'),
             });
