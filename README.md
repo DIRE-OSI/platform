@@ -205,3 +205,7 @@ If you use this software or the data pipelines, please cite both the software re
 ## Funding and acknowledgements
 
 This work was funded by a **Wellcome Trust** grant to the **University of California, San Diego (UCSD)**. The software was developed by **New Light Technologies (NLT), Inc.** Scientific collaborators include **Universidad Peruana Cayetano Heredia (UPCH)**. The live DIRE dashboard is operated by NLT, Inc. and is currently in beta, with user-experience and data-quality reviews ongoing.
+
+---
+
+<p align="center">Maintained by <a href="https://nltgis.com">New Light Technologies, Inc. (nltGIS)</a> in partnership with <a href="https://gps.ucsd.edu">UC San Diego School of Global Policy and Strategy</a>.</p>

@@ -55,6 +55,8 @@ gh_edit_source: docs
 gh_edit_view_mode: "edit"
 
 footer_content: >-
+  Maintained by <a href="https://nltgis.com">New Light Technologies, Inc. (nltGIS)</a>
+  in partnership with <a href="https://gps.ucsd.edu">UC San Diego School of Global Policy and Strategy</a>.<br>
   DIRE is developed by UC San Diego (School of Global Policy and Strategy) and
   New Light Technologies, with Universidad Peruana Cayetano Heredia and UNICEF,
   funded by the Wellcome Trust. Code: Apache-2.0 · Documentation: CC BY 4.0 ·
