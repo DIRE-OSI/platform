@@ -28,6 +28,10 @@ back_to_top_text: "Back to top"
 aux_links:
   "Live dashboard":
     - "https://dire.impact.nltglobal.com"
+  "Release notes":
+    - "https://github.com/DIRE-OSI/platform/releases"
+  "Feedback":
+    - "https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml"
   "GitHub":
     - "https://github.com/DIRE-OSI/platform"
 aux_links_new_tab: true

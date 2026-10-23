@@ -9,7 +9,7 @@
 ![Docs](https://img.shields.io/badge/docs-CC--BY--4.0-lightgrey)
 ![Status](https://img.shields.io/badge/status-active%20development-orange)
 
-[🌐 Live Dashboard](https://dire.impact.nltglobal.com) · [🗺️ Using the Dashboard](docs/USING_THE_DASHBOARD.md) · [ℹ️ About](docs/ABOUT.md) · [🔬 Research Basis](docs/RESEARCH_BASIS.md) · [👥 Team](docs/TEAM.md) · [📜 Roadmap](docs/ROADMAP.md) · [🤝 Get Involved](#-get-involved) · [🆘 Support](SUPPORT.md)
+[🌐 Live Dashboard](https://dire.impact.nltglobal.com) · [🗺️ Using the Dashboard](docs/USING_THE_DASHBOARD.md) · [ℹ️ About](docs/ABOUT.md) · [🔬 Research Basis](docs/RESEARCH_BASIS.md) · [👥 Team](docs/TEAM.md) · [📜 Roadmap](docs/ROADMAP.md) · [📰 Release notes](https://github.com/DIRE-OSI/platform/releases) · [💬 Feedback](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml) · [🤝 Get Involved](#-get-involved) · [🆘 Support](SUPPORT.md)
 
 > 🚧 **Status: Under active development.** This repository is an early, evolving release published **in coordination with the DIRE project team at UC San Diego (UCSD) and New Light Technologies (NLT)**. Its structure, documentation, and included code are being staged and reviewed phase by phase; content may change. It is shared now to enable open review and collaboration — please treat it as work in progress and coordinate with the project team before relying on it.
 
@@ -52,7 +52,8 @@ DIRE is an **open science** project. We built this repository so that researcher
 
 ### For public-health practitioners and responders
 - **Use the dashboard.** The live platform at [dire.impact.nltglobal.com](https://dire.impact.nltglobal.com) is free to use for planning and situational awareness.
-- **Tell us what you need.** Resource-estimation and reporting features are shaped by real operational needs. File an [issue](https://github.com/DIRE-OSI/platform/issues) describing your use case, the decisions you make, and the outputs that would help.
+- **Tell us what you need.** Resource-estimation and reporting features are shaped by real operational needs. Use the [dashboard feedback form](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml) to describe your use case, the decisions you make, and the outputs that would help.
+- **Stay up to date.** Each update to the live dashboard is published under [Releases](https://github.com/DIRE-OSI/platform/releases).
 
 ### For contributors and developers
 - **Report issues** — bugs, unclear docs, or reproducibility gaps.
@@ -70,10 +71,13 @@ DIRE is an **open science** project. We built this repository so that researcher
 
 Need help, found a bug, or have a question? See **[SUPPORT.md](SUPPORT.md)** for where each request should go. In short:
 
-- **Bugs, errors, reproducibility gaps** → open an [Issue](https://github.com/DIRE-OSI/platform/issues/new/choose).
+- **Live dashboard feedback, bugs or ideas** → use the [dashboard feedback form](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml) (English, Spanish or Portuguese). The "Submit Feedback / Contact Us" link at the bottom of the dashboard opens the same form.
+- **Bugs, errors, reproducibility gaps in this repository** → open an [Issue](https://github.com/DIRE-OSI/platform/issues/new/choose).
 - **Questions, ideas, new covariates/diseases/countries** → start a [Discussion](https://github.com/DIRE-OSI/platform/discussions).
-- **Security vulnerabilities** → follow [SECURITY.md](SECURITY.md) (please don't open a public issue).
-- **Live dashboard feedback** → use the feedback form on [dire.impact.nltglobal.com](https://dire.impact.nltglobal.com).
+- **Security vulnerabilities or sensitive matters** → follow [SECURITY.md](SECURITY.md) (please don't open a public issue).
+- **Release notes for the live dashboard** → [Releases](https://github.com/DIRE-OSI/platform/releases). To be notified, click **Watch → Custom → Releases** at the top of this repository.
+
+Issues and Discussions need a free GitHub account, and everything posted there is public. Please don't include personal or patient information.
 
 New issues are automatically acknowledged and routed to the maintainers.
 
@@ -92,12 +96,14 @@ platform/
 ├── workflows/
 │   ├── predictors/         # Python pipeline: remote-sensing & climate covariates
 │   └── dengue_forecasting/ # Python + R pipeline: disease incidence forecasts
+├── CHANGELOG.md            # Repository and live dashboard change history
 ├── CITATION.cff            # Machine-readable citation metadata
 ├── CONTRIBUTING.md         # PR workflow and DCO sign-off
 ├── CODE_OF_CONDUCT.md      # Community standards
 ├── LICENSE                 # Apache-2.0 (source code)
 ├── NOTICE                  # Attribution
 ├── SECURITY.md             # Vulnerability disclosure
+├── SUPPORT.md              # Where to send feedback, questions and reports
 ├── DISCLAIMER.md           # Platform disclaimer and liability terms
 └── .env.example            # Credential template
 ```
