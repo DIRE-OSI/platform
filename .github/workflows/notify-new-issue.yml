@@ -22,7 +22,7 @@ jobs:
         with:
           script: |
             // Add or remove GitHub usernames here as the maintainer team grows.
-            const maintainers = ['ghermay'];
+            const maintainers = ['ghermay', 'griffvolkernlt'];
             try {
               await github.rest.issues.addAssignees({
                 owner: context.repo.owner,
@@ -42,6 +42,6 @@ jobs:
                 `Thanks for opening this issue — the DIRE-OSI maintainers (${mentions}) have been notified and will review it.`,
                 ``,
                 `For open-ended questions and ideas, you can also use [Discussions](../../discussions).`,
-                `This platform is in active development (soft launch), so response times may vary.`,
+                `DIRE is in beta, so response times may vary. Release notes are under [Releases](../../releases).`,
               ].join('\n'),
             });
