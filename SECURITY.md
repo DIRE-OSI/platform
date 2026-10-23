@@ -16,6 +16,10 @@ When reporting, please include:
 
 We will acknowledge your report, keep you informed of our progress, and credit you (with your permission) once the issue is resolved.
 
+## Sensitive matters about the live dashboard
+
+Issues, discussions and the dashboard feedback form are public. If what you need to report should not be public (for example, a data-protection concern or information that could identify a person or location), use the same [private report](https://github.com/DIRE-OSI/platform/security/advisories/new) instead. Only the maintainers can see it.
+
 ## Scope
 
 This policy covers the code and documentation in this repository. The live dashboard and forecasting API at `dire.impact.nltglobal.com` are operated separately; vulnerabilities affecting the live service can also be reported through the channels above.
