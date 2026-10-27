@@ -71,7 +71,7 @@ DIRE is an **open science** project. We built this repository so that researcher
 
 Need help, found a bug, or have a question? See **[SUPPORT.md](SUPPORT.md)** for where each request should go. In short:
 
-- **Live dashboard feedback, bugs or ideas** → use the [dashboard feedback form](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml) (English, Spanish or Portuguese). The "Submit Feedback / Contact Us" link at the bottom of the dashboard opens the same form.
+- **Live dashboard feedback, bugs or ideas** → use the [dashboard feedback form](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml) (English, Spanish or Portuguese). To send feedback privately instead, use "Submit Feedback / Contact Us" at the bottom of the dashboard: it goes straight to the DIRE team at New Light Technologies, not to GitHub.
 - **Bugs, errors, reproducibility gaps in this repository** → open an [Issue](https://github.com/DIRE-OSI/platform/issues/new/choose).
 - **Questions, ideas, new covariates/diseases/countries** → start a [Discussion](https://github.com/DIRE-OSI/platform/discussions).
 - **Security vulnerabilities or sensitive matters** → follow [SECURITY.md](SECURITY.md) (please don't open a public issue).
