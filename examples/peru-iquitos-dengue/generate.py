@@ -19,8 +19,11 @@ import pandas as pd
 # Public reference identifiers (INEI UBIGEO), Maynas province, Loreto department
 DISTRICTS = [
     # admin_id, admin_name, synthetic population (all ages), share aged 0-19, baseline incidence /100k
+    # synthetic values for population, share aged 0-19, and baseline incidence
     ("160108", "Punchana", 95_000, 0.38, 35.0),
     ("160113", "San Juan Bautista", 165_000, 0.40, 45.0),
+    ("160101", "Iquitos", 160_000, 0.35, 50.0), 
+    ("160112", "Belén", 70_000, 0.37, 40.0)
 ]
 START, END = "2015-01", "2025-12"
 
@@ -86,8 +89,8 @@ def main() -> None:
     args = parser.parse_args()
     args.out.mkdir(parents=True, exist_ok=True)
     cases, cov = simulate(args.seed)
-    cases.to_csv(args.out / "SYNTHETIC_peru_iquitos_dengue_cases.csv", index=False)
-    cov.to_csv(args.out / "SYNTHETIC_peru_iquitos_covariates.csv", index=False)
+    cases.to_csv(args.out / "SYNTHETIC_peru_iquitos_dengue_cases.csv", encoding = "utf-8-sig", index=False)
+    cov.to_csv(args.out / "SYNTHETIC_peru_iquitos_covariates.csv", encoding = "utf-8-sig", index=False)
     print(f"Wrote {len(cases)} case rows and {len(cov)} covariate rows to {args.out}")
 
 
