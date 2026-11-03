@@ -7,6 +7,7 @@ DIRE uses Brazil's notifiable-disease surveillance (**SINAN**, via **DATASUS**) 
 - **SINAN** — *Sistema de Informação de Agravos de Notificação* (Notifiable Diseases Information System), the national reporting system that includes dengue and malaria notifications.
 - Accessed and processed with the open-source R package **`microdatasus`**:
   **<https://github.com/rfsaldanha/microdatasus>** (Saldanha et al.). It downloads and parses DATASUS public microdata (`.dbc` files) and helps aggregate them.
+- **Malaria:** SINAN holds malaria notified **outside** Brazil's Legal Amazon. Notifications in the nine Legal Amazon states are recorded in **SIVEP-Malaria**, which DIRE combines with SINAN; see [sivep-malaria.md](sivep-malaria.md).
 
 ## Access
 
