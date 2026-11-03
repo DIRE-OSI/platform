@@ -31,7 +31,7 @@ The platform integrates:
 
 - **Remote-sensing covariates** — NASA Earthdata (MODIS land cover + vegetation indices, NASADEM elevation)
 - **Climate covariates** — Copernicus ERA5-Land (temperature, precipitation, humidity)
-- **Epidemiological surveillance** — Brazil DATASUS SINAN (dengue and malaria) and SIVEP-Malaria (malaria in the Legal Amazon), and Peru MINSA dengue and malaria case records
+- **Epidemiological surveillance** — Brazil DATASUS SINAN (dengue and malaria) and Peru MINSA dengue and malaria case records. SIVEP-Malaria (malaria in Brazil's Legal Amazon) is being added; see the [release notes](https://github.com/DIRE-OSI/platform/releases).
 - **An ensemble ML model** — an ensemble of machine-learning models (including CatBoost, SVM, and LSTM) combined by a Random Forest meta-learner, building on Sebastianelli et al. (2024)
 
 Risk estimates are mapped to five tiers (Lowest → Highest) for sub-national administrative units (Peru department, province and district; Brazil state and municipality) and are refreshed monthly.
@@ -128,7 +128,6 @@ External data sources
   NASA Earthdata (MODIS, NASADEM) ─────────┐
   Copernicus CDS (ERA5-Land) ──────────────┤──► workflows/predictors/
   Brazil DATASUS SINAN ────────────────────┤        │  covariate tables
-  Brazil SIVEP-Malaria ────────────────────┤        │
   Peru MINSA surveillance ─────────────────┘        ▼
                                         workflows/dengue_forecasting/
                                         ├── feature engineering
