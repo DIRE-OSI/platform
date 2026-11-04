@@ -8,7 +8,7 @@ A small, self-contained example that shows the structure of DIRE inputs at the l
 
 | | |
 |---|---|
-| **Units** | Punchana (UBIGEO 160108), San Juan Bautista (160113), Iquitos (160101) and Belén (160112) district level (administrative level 3)
+| **Units** | Punchana (UBIGEO 160108), San Juan Bautista (160113), Iquitos (160101) and Belén (160112), district level (administrative level 3) |
 | **Period** | January 2015 – December 2025, monthly |
 | **Disease** | Dengue |
 | **Files** | `data/SYNTHETIC_peru_iquitos_dengue_cases.csv`, `data/SYNTHETIC_peru_iquitos_covariates.csv` (created by `generate.py`) |
