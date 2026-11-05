@@ -7,7 +7,7 @@ This page describes the **structure** of DIRE's analysis-ready inputs and output
 | Field | Type | Description |
 |---|---|---|
 | `country` | text | ISO 3166-1 alpha-3 code (`PER`, `BRA`) |
-| `admin_level` | integer | Administrative level: 1 (department / state), 2 (province / micro-region), 3 (district / municipality) |
+| `admin_level` | integer | Administrative level. **Peru:** 1 (department), 2 (province), 3 (district). **Brazil:** 1 (state), 2 (municipality). |
 | `admin_id` | text | Stable unit identifier (national administrative geocode) |
 | `admin_name` | text | Unit name as published by the national statistics office |
 | `year`, `month` | integer | Calendar year and month of the observation or forecast |
@@ -21,7 +21,8 @@ This page describes the **structure** of DIRE's analysis-ready inputs and output
 | `cases_0_19` | count | Reported cases, ages 0–19 |
 | `dir_total` | per 100,000 | Disease Incidence Rate, all ages |
 | `dir_0_19` | per 100,000 | Disease Incidence Rate, ages 0–19 |
-| `data_status` | text | `final`, `provisional`, or `filled` (recent months estimated because of reporting delay) |
+
+Recent months may be revised as late reports arrive.
 
 ## Covariates
 
@@ -30,7 +31,7 @@ This page describes the **structure** of DIRE's analysis-ready inputs and output
 | Temperature | `t2m_mean`, `t2m_min`, `t2m_max` | °C | ERA5-Land |
 | Precipitation | `precip_total` | mm / month | ERA5-Land |
 | Humidity | `rh_mean` (or dew point) | % | ERA5-Land |
-| Vegetation | `ndvi_mean`, `evi_mean` | index (−1 to 1) | MODIS |
+| Vegetation | `ndvi_mean` | index (−1 to 1) | MODIS |
 | Land cover | `lc_<class>_frac` | fraction of unit area | MODIS |
 | Terrain | `elev_mean` | m | NASADEM |
 | Population | `pop_total`, `pop_0_19`, `pop_density` | persons, persons/km² | National census |
@@ -42,7 +43,7 @@ This page describes the **structure** of DIRE's analysis-ready inputs and output
 | Field | Unit | Description |
 |---|---|---|
 | `issue_month` | YYYY-MM | Month the forecast was produced |
-| `horizon` | months | 0 (current month), 1, or 2 |
+| `horizon` | months | 0 (current month), 1 (next month), or 2. The dashboard shows horizons 0 and 1. |
 | `target_month` | YYYY-MM | Month being forecast |
 | `pred_cases` | count | Expected cases, all ages |
 | `pred_dir_total`, `pred_dir_0_19` | per 100,000 | Predicted incidence rates |
