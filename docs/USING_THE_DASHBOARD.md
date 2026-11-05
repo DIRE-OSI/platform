@@ -55,9 +55,13 @@ Use **Generate Report** in the top bar to export a customized risk report for a 
 
 The dashboard lists current known issues in its notice. At the time of writing these include an ongoing **data-quality review** of predictions and resource estimates, a review of **consistency between administrative levels** for some Brazil units, and **incomplete Brazil malaria counts** (the current source does not yet include cases reported in the Amazon region). Known issues are updated as fixes are released.
 
+## Privacy
+
+The dashboard counts visits with Plausible Analytics, which uses no cookies, does not track individuals and stores no personal data. See "Privacy & analytics" at the bottom of the dashboard.
+
 ## Questions, problems or feedback?
 
-- **Feedback or a problem with the dashboard:** open a [Dashboard feedback](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml) issue, in English, Spanish or Portuguese. The dashboard's "Submit Feedback" link opens the same form.
+- **Feedback or a problem with the dashboard:** use "Submit Feedback / Contact Us" at the bottom of the dashboard to reach the DIRE team privately. To post publicly instead, open a [Dashboard feedback](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml) issue, in English, Spanish or Portuguese.
 - **Questions and ideas:** start a [Discussion](https://github.com/DIRE-OSI/platform/discussions).
 - **What changed:** see the [Releases](https://github.com/DIRE-OSI/platform/releases).
 - **How the platform works, the science, the data:** see [ABOUT.md](ABOUT.md) and [RESEARCH_BASIS.md](RESEARCH_BASIS.md).

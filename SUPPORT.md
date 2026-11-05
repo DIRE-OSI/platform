@@ -6,7 +6,7 @@ Thanks for your interest in DIRE. This repository is the public home for DIRE: d
 
 | I want to… | Use this |
 |---|---|
-| **Give feedback on the live dashboard, or report a problem with it** | Open a [**Dashboard feedback**](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml) issue (English, Spanish or Portuguese). The dashboard's "Submit Feedback" link opens the same form. |
+| **Give feedback on the live dashboard, or report a problem with it** | Open a [**Dashboard feedback**](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml) issue (English, Spanish or Portuguese). To send it privately instead, use "Submit Feedback / Contact Us" at the bottom of the dashboard: it goes straight to the DIRE team, not to GitHub. |
 | **Report a bug, error, or reproducibility gap in the code or docs** | Open a [**GitHub Issue**](https://github.com/DIRE-OSI/platform/issues/new/choose) using the *Bug report* template |
 | **Ask a question, propose an idea, discuss a covariate/disease/country** | Start a [**GitHub Discussion**](https://github.com/DIRE-OSI/platform/discussions) |
 | **Request a feature or research addition** | Open an [**Issue**](https://github.com/DIRE-OSI/platform/issues/new/choose) using the *Feature request / research idea* template |
