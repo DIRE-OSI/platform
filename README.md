@@ -2,7 +2,7 @@
 
 ### Disease Incidence and Resource Estimator
 
-**1-, 2-, and 3-month-ahead disease-incidence risk forecasting at sub-national scale**
+**Sub-national disease-incidence risk forecasts for the current month and the next**
 *Initial coverage: dengue & malaria in Peru and Brazil — additional countries and diseases are being onboarded.*
 
 ![License](https://img.shields.io/badge/license-Apache--2.0-blue)
@@ -23,7 +23,7 @@
 
 ## What is DIRE?
 
-DIRE (Disease Incidence and Resource Estimator) is a machine-learning forecasting platform that produces **1-, 2-, and 3-month-ahead disease-incidence estimates** (the current month plus the following two) at the sub-national administrative level. It is designed to support public-health decision-makers, epidemiologists, and humanitarian responders in anticipating disease burden and allocating resources *before* outbreaks peak.
+DIRE (Disease Incidence and Resource Estimator) is a machine-learning forecasting platform that produces **disease-incidence estimates for the current month and the next month** at the sub-national administrative level. It is designed to support public-health decision-makers, epidemiologists, and humanitarian responders in anticipating disease burden and allocating resources *before* outbreaks peak.
 
 **Coverage is expanding.** Peru and Brazil — and the diseases dengue and malaria — are the **first countries and diseases** being trialed during the platform's development and operations-and-maintenance (O&M) phase. The methodology and pipelines are built to generalize, and **additional countries and diseases are being onboarded** over time. References to Peru, Brazil, dengue, and malaria throughout this repository describe the *current* rollout, not the platform's ultimate scope.
 
@@ -31,8 +31,8 @@ The platform integrates:
 
 - **Remote-sensing covariates** — NASA Earthdata (MODIS land cover + vegetation indices, NASADEM elevation)
 - **Climate covariates** — Copernicus ERA5-Land (temperature, precipitation, humidity)
-- **Epidemiological surveillance** — Brazil DATASUS SINAN and Peru MINSA dengue case records
-- **An ensemble ML model** — CatBoost, SVM, and LSTM models synthesized with a Random Forest, as described in Sebastianelli et al. (2024)
+- **Epidemiological surveillance** — Brazil DATASUS SINAN (dengue and malaria) and Peru MINSA dengue and malaria case records. SIVEP-Malaria (malaria in Brazil's Legal Amazon) is being added; see the [release notes](https://github.com/DIRE-OSI/platform/releases).
+- **An ensemble ML model** — an ensemble of machine-learning models (including CatBoost, SVM, and LSTM) combined by a Random Forest meta-learner, building on Sebastianelli et al. (2024)
 
 Risk estimates are mapped to five tiers (Lowest → Highest) for sub-national administrative units (Peru department, province and district; Brazil state and municipality) and are refreshed monthly.
 
