@@ -14,11 +14,11 @@ DIRE's open pipelines are designed to be run and validated **without access to r
 |---|---|---|---|
 | Synthetic case series | Peru & Brazil · dengue & malaria · monthly | Run the forecasting pipeline end to end | In preparation |
 | Synthetic covariate tables | Same units and months | Exercise the covariate join and feature steps | In preparation |
-| Example forecast output | 3-month horizon | Illustrate output format and risk tiers | In preparation |
+| Example forecast output | Current and next month | Illustrate output format and risk tiers | In preparation |
 
 ## Worked example
 
-A small synthetic example for two districts of Iquitos, Peru (dengue, monthly, 2015–2025) is available in [`examples/peru-iquitos-dengue`](https://github.com/DIRE-OSI/platform/tree/main/examples/peru-iquitos-dengue), with a generator, a schema check and a data card.
+A small synthetic example for four districts of Iquitos, Peru (dengue, monthly, 2015–2025) is available in [`examples/peru-iquitos-dengue`](https://github.com/DIRE-OSI/platform/tree/main/examples/peru-iquitos-dengue), with a generator, a schema check and a data card.
 
 ## Using it
 

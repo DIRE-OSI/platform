@@ -13,7 +13,7 @@ repository-code: "https://github.com/DIRE-OSI/platform"
 url: "https://dire.impact.nltglobal.com"
 abstract: >-
   DIRE (Disease Incidence and Resource Estimator) is an open-science machine-learning
-  platform producing 1-, 2-, and 3-month-ahead disease-incidence forecasts at
+  platform producing current-month and next-month disease-incidence forecasts at
   sub-national administrative granularity. Initial coverage is dengue and malaria
   in Peru and Brazil, with additional countries and diseases being onboarded. It
   integrates remote-sensing and climate covariates with epidemiological surveillance

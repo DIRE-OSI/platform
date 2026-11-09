@@ -8,7 +8,7 @@ This page summarises, in preliminary form, how DIRE produces its estimates, how 
 |---|---|
 | **Task** | Short-horizon estimation of monthly dengue and malaria incidence |
 | **Setting** | Peru and Brazil; administrative levels 1–3 (e.g. department / province / district) |
-| **Horizons** | Current month and the following two months |
+| **Horizons** | Current month and next month (a two-months-ahead estimate is computed but not shown on the dashboard) |
 | **Target** | Disease Incidence Rate (DIR, cases per 100,000) for the total population and for ages 0–19, converted to expected case counts |
 | **Approach** | Stacked ensemble of complementary learners, building on Sebastianelli *et al.* (2024) |
 | **Update cycle** | Monthly estimation; periodic retraining as new surveillance data become available |
@@ -32,7 +32,7 @@ See [Data sources](data-sources/README.md) for access and licensing, and the [Da
 1. **Preparation.** Inputs are checked for temporal continuity, aligned to a common unit-by-month grid and scaled. Covariates are grouped (climate, geographic, socio-economic) and reduced in dimension. Seasonality is represented with cyclical month encoding. All scaling and reduction steps are fitted on training data only and reused unchanged at estimation time, to avoid information leakage.
 2. **Base learners.** Gradient-boosted decision trees (CatBoost), support-vector regression and a recurrent neural network (LSTM) are trained on sequences of recent observations; a short-term polynomial trend provides an additional signal.
 3. **Ensemble.** A random-forest meta-learner combines the base-learner outputs into a final estimate.
-4. **Horizons.** Estimates are produced for the current month and the following two. Horizon-specific models, which allow each lead time to be trained and evaluated separately, are being evaluated for an upcoming release.
+4. **Horizons.** Each lead time has its own model, trained and evaluated separately (since dashboard v1.1.0). Estimates are computed for the current month and the following two; the dashboard shows the current and next month, following an evaluation of forecast performance at longer horizons (dashboard v1.1.2).
 5. **Reporting delay.** Where recent surveillance data are not yet available, missing months are provisionally filled using a data-driven procedure before estimation. This procedure is under continued evaluation.
 6. **Cross-level consistency.** Estimates at different administrative levels are reconciled so that sub-national values are coherent with higher-level totals.
 
