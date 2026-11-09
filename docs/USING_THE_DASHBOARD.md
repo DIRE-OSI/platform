@@ -57,7 +57,7 @@ The dashboard lists current known issues in its notice. At the time of writing t
 
 ## Questions, problems or feedback?
 
-- **Feedback or a problem with the dashboard:** open a [Dashboard feedback](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml) issue, in English, Spanish or Portuguese. The dashboard's "Submit Feedback" link opens the same form.
+- **Feedback or a problem with the dashboard:** open a [Dashboard feedback](https://github.com/DIRE-OSI/platform/issues/new?template=dashboard_feedback.yml) issue, in English, Spanish or Portuguese.
 - **Questions and ideas:** start a [Discussion](https://github.com/DIRE-OSI/platform/discussions).
 - **What changed:** see the [Releases](https://github.com/DIRE-OSI/platform/releases).
 - **How the platform works, the science, the data:** see [ABOUT.md](ABOUT.md) and [RESEARCH_BASIS.md](RESEARCH_BASIS.md).

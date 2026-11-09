@@ -26,7 +26,11 @@ This repository publishes two kinds of release:
 The last step of every production deployment of the dashboard:
 
 1. Add a short, public-safe summary under **Live platform** in `CHANGELOG.md`, with the date the version went live.
-2. Update any docs pages the release changes (see *Alignment with the live dashboard* below).
+2. **Check that the docs still match the live dashboard.** Before publishing, compare these against the new version and update any page that no longer matches, through a PR in the same cycle:
+   - [ ] Forecast months shown: `README`, `docs/ABOUT.md`, `docs/METHODS.md`, `docs/USING_THE_DASHBOARD.md`, `DISCLAIMER.md`, `CITATION.cff`.
+   - [ ] Data sources and the latest month of reported data: `docs/data-sources/`, `docs/ABOUT.md`, `docs/USING_THE_DASHBOARD.md`.
+   - [ ] Feedback and support channels: `README`, `SUPPORT.md`, `docs/USING_THE_DASHBOARD.md`.
+   - [ ] Known issues: `docs/USING_THE_DASHBOARD.md` matches the dashboard's Beta notice.
 3. Publish a GitHub Release tagged `dashboard-vX.Y.Z` on `main`, with the same public-safe release notes the dashboard shows. GitHub notifies everyone watching this repository's releases, so no separate email is needed.
 
 ## Open-source compliance checklist (per release)
@@ -44,7 +48,8 @@ The last step of every production deployment of the dashboard:
 
 The documentation here describes the methods, data sources and behaviour of the live dashboard at [dire.impact.nltglobal.com](https://dire.impact.nltglobal.com). To keep the two consistent:
 
-- When a dashboard update changes methods, data sources, forecast horizon or user-facing behaviour, the relevant pages (Methods, Data dictionary, Using the dashboard) are reviewed and updated in the same cycle.
+- When a dashboard update changes methods, data sources, forecast horizon or user-facing behaviour, the relevant pages are reviewed and updated in the same cycle, using the checklist in step 2 of the live dashboard release steps.
+- Describe feedback and support channels by their purpose (public feedback, private support), not by what a particular dashboard link or button opens, so the docs stay correct when the interface changes.
 - A short, public-safe summary of each dashboard update is added to `CHANGELOG.md` under a **Live platform** heading, with the date it went live, and published as a `dashboard-vX.Y.Z` GitHub Release.
 - Documentation describes what is live. Planned or in-review changes are described only in indicative terms on the [Roadmap](docs/ROADMAP.md).
 
